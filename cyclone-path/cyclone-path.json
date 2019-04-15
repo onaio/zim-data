@@ -1,5 +1,5 @@
 {
-    "label": "Ciclone caminho",
+    "label": "Cyclone Path",
     "source": {
       "type": "vector",
       "layer": "cyclone_path",
