@@ -1,0 +1,19 @@
+{
+    "label": "Ciclone caminho",
+    "source": {
+      "type": "vector",
+      "layer": "cyclone_path",
+      "url": "mapbox://ona.8u791agt"
+    },
+    "type": "line",
+    "paint": {
+      "line-width": 5,
+      "line-color": "#FF851B",
+      "line-opacity": 0.8
+    },
+    "visible": false,
+    "menu-credit": "HDX",
+    "credit": "<a href=https://data.humdata.org/dataset/unosat-analysis-on-floods-in-mozambique-march-2019 target=_blank data-credit=credit>Map Action</a>",
+    "category": "Cyclone Path",
+    "default": true
+  }
