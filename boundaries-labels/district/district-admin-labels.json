@@ -2,7 +2,7 @@
     "label": "District Labels",
     "source": {
         "type": "geojson",
-        "data": "data/zimbabwe-admin2-centroids-2.geojson"
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/boundaries-labels/district/zimbabwe-admin2-centroids-2.geojson"
     },
     "type": "symbol",
     "minzoom": 0,

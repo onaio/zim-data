@@ -2,7 +2,7 @@
     "label": "Province Labels",
     "source": {
         "type": "geojson",
-        "data": "data/zimbabwe-admin1-centroids-2.geojson",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/boundaries-labels/province/zimbabwe-admin1-centroids-2.geojson",
         "minzoom": 3
     },
     "type": "symbol",

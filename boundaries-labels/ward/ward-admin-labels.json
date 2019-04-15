@@ -2,7 +2,7 @@
     "label": "Ward Labels",
     "source": {
         "type": "geojson",
-        "data": "data/zimbabwe-admin3-centroids.geojson"
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/boundaries-labels/ward/zimbabwe-admin3-centroids.geojson"
     },
     "type": "symbol",
     "minzoom": 0,

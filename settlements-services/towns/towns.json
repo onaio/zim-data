@@ -3,7 +3,7 @@
     "source": {
         "type": "geojson",
         "featureType": "Point",
-        "data": "data/zim_towns.csv"
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/settlements-services/towns/zim_towns.csv"
     },
     "type": "symbol",
     "minzoom": 0,

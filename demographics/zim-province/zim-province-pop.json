@@ -2,7 +2,7 @@
   "label": "Province Population",
   "source": {
     "type": "vector",
-    "data": "data/Zimbabwe Population Data - province.csv",
+    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-province/Zimbabwe%20Population%20Data%20-%20province.csv",
     "layer": "zim_admin_1_province",
     "url": "mapbox://ona.8ze9mgc4",
     "join": ["NAME", "Names"]
