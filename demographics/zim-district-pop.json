@@ -1,0 +1,24 @@
+{
+  "label": "District Population",
+  "source": {
+    "type": "vector",
+    "data": "https://raw.githubusercontent.com/onaio/cycloneidai-2019-data/master/zim/zim-district-pop/Zimbabwe%20Population%20Data%20-%20district.csv",
+    "layer": "zim_admin_2_district",
+    "url": "mapbox://ona.3euuqmiq",
+    "join": ["NAME", "Names"]
+  },
+  "id": "zim-district-pop",
+  "type": "fill",
+  "property": "Populations",
+  "categories": {
+    "breaks": "yes",
+    "color": "Blues",
+    "clusters": 5
+  },
+  "popup": {
+    "header": "Names",
+    "body": "<p style=text-align:left;> <b>Population:</b> {{Populations}}</p>"
+  },
+  "visible": false,
+  "credit": " "
+}

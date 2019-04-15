@@ -1,0 +1,14 @@
+{
+    "label": "Zimbabwe Highways",
+    "source": {
+      "type": "vector",
+      "layer": "zim_highways",
+      "url": "mapbox://ona.1vwius9k"
+    },
+    "type": "line",
+    "paint": {
+      "line-width": 1,
+      "line-color": "#FF851B",
+      "line-opacity": 0.6
+    }
+  }

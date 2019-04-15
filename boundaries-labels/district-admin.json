@@ -1,0 +1,16 @@
+{
+  "label": "District Boundaries",
+  "source": {
+    "type": "vector",
+    "layer": "zim_admin_2_district",
+    "url": "mapbox://ona.3euuqmiq"
+  },
+  "type": "line",
+  "paint": {
+    "line-width": 1.5,
+    "line-color": "#737373",
+    "line-opacity": 0.5
+  },
+  "visible": false,
+  "category": "Boundaries & Labels"
+}

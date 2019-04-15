@@ -1,0 +1,14 @@
+{
+    "label": "Buildings",
+    "source": {
+      "type": "vector",
+      "layer": "building",
+      "url": "mapbox://mapbox.mapbox-streets-v7"
+    },
+    "type": "fill",
+        "paint": {
+          "fill-color": "#FF851B",
+          "fill-opacity": 0.4,
+          "fill-outline-color": "#d9d9d9"
+         }
+}

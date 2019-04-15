@@ -1,0 +1,24 @@
+{
+  "label": "Province Population",
+  "source": {
+    "type": "vector",
+    "data": "data/Zimbabwe Population Data - province.csv",
+    "layer": "zim_admin_1_province",
+    "url": "mapbox://ona.8ze9mgc4",
+    "join": ["NAME", "Names"]
+  },
+  "id": "zim-province-pop",
+  "type": "fill",
+  "property": "Populations",
+  "categories": {
+    "breaks": "yes",
+    "color": "Blues",
+    "clusters": 5
+  },
+  "popup": {
+    "header": "Names",
+    "body": "<p style=text-align:left;> <b>Population:</b> {{Populations}}</p>"
+  },
+  "visible": false,
+  "credit": " "
+}

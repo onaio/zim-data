@@ -1,0 +1,17 @@
+{
+  "label": "Ward Boundaries",
+  "source": {
+    "type": "vector",
+    "layer": "zimbabweadmin3",
+    "url": "mapbox://ona.1dpyvbku"
+  },
+  "type": "line",
+  "paint": {
+    "line-width": 1.2,
+    "line-color": "#aaa",
+    "line-opacity": 1,
+    "line-dasharray": [1,2]
+  },
+  "visible": false,
+  "category": "Boundaries & Labels"
+}

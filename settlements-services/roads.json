@@ -1,0 +1,14 @@
+{
+    "label": "Roads",
+    "source": {
+      "type": "vector",
+      "layer": "road",
+      "url": "mapbox://mapbox.mapbox-streets-v7"
+    },
+    "type": "line",
+    "paint": {
+      "line-width": 1,
+      "line-color": "#FF851B",
+      "line-opacity": 0.6
+    }
+  }
