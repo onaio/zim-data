@@ -27,6 +27,13 @@
         "icon-allow-overlap": false,
         "icon-ignore-placement": false
     },
+    "popup": {
+        "join": [
+            "SCHOOL NAME",
+            "SCHOOL NAME"
+        ],
+        "body": "<p style=text-align:left;> <b>Name:</b> {{SCHOOL NAME}}</p>"
+      },
     "visible": false,
     "category": "Boundaries & Labels"
 }
