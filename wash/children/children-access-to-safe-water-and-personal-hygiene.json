@@ -2,7 +2,7 @@
     "label": "Number of children (under 18 years old) in affected areas provided with access to safe water and personal hygiene",
     "source": {
         "type": "vector",
-        "data": "data/safe-water-proper-hygiene-matrix.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/children/safe-water-proper-hygiene-matrix.csv",
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
@@ -24,7 +24,7 @@
     },
     "popup": {
         "header": "Location",
-        "body": "<p style=text-align:left;><b>UNICEF Results: </b> {{UNICEF Results}}<br> <b>Country Total Target: </b> {{Target}}<br></p>"
+        "body": "<p style=text-align:left;><b>UNICEF Results: </b> {{UNICEF Results}}<br> <b>Target: </b> {{Target}}<br></p>"
       },
     "visible": false,
     "menu-credit": "HPM Weekly Results MAtrix"

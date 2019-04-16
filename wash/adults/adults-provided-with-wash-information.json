@@ -2,7 +2,7 @@
     "label": "Number of adults (18 years or older) provided with critical WASH-related information to prevent waterborne diseases",
     "source": {
         "type": "vector",
-        "data": "data/adults-with-wash-related-info.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/adults/adults-with-wash-related-info.csv",
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
@@ -24,7 +24,7 @@
     },
     "popup": {
         "header": "Location",
-        "body": "<p style=text-align:left;><b>UNICEF Results: </b> {{UNICEF Results}}<br> <b>Country Total Target: </b> {{Target}}<br></p>"
+        "body": "<p style=text-align:left;><b>UNICEF Results: </b> {{UNICEF Results}}<br> <b>Target: </b> {{Target}}<br></p>"
       },
     "visible": false,
     "menu-credit": "HPM Weekly Results MAtrix"

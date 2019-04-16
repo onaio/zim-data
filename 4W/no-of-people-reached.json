@@ -2,7 +2,7 @@
     "label": "No. of people reached",
     "source": {
         "type": "vector",
-        "data": "data/4W_Matrix_april9.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/4W/4W_Matrix_april9.csv",
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [

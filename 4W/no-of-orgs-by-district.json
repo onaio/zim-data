@@ -2,7 +2,7 @@
     "label": "No. of Organizations",
     "source": {
         "type": "vector",
-        "data": "data/district_partners.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/4W/district_partners.csv",
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
