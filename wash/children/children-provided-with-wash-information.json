@@ -2,7 +2,7 @@
     "label": "Number of children(under 18 years old) provided with critical WASH-related information to prevent water born diseases",
     "source": {
         "type": "vector",
-        "data": "data/children-with-wash-related-information.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/children/children-with-wash-related-information.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [

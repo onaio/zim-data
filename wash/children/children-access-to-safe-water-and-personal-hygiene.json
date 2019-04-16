@@ -2,7 +2,7 @@
     "label": "Number of children (under 18 years old) in affected areas provided with access to safe water and personal hygiene",
     "source": {
         "type": "vector",
-        "data": "data/safe-water-proper-hygiene-matrix.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/children/safe-water-proper-hygiene-matrix.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [
