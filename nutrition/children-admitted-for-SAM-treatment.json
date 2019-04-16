@@ -2,7 +2,7 @@
     "label": "Number of children aged 6 to 59 months admitted for SAM treatment",
     "source": {
         "type": "vector",
-        "data": "data/HPM_matrix.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/nutrition/HPM_matrix.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [
