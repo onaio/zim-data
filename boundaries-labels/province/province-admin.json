@@ -8,8 +8,8 @@
   "type": "line",
   "paint": {
     "line-width": 2,
-    "line-color": "#444",
-    "line-opacity": 0.8,
+    "line-color": "#888",
+    "line-opacity": 0.6,
     "line-gap-width": 0
   },
   "visible": true,
