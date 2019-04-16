@@ -1,0 +1,39 @@
+{
+    "label": "No. of people reached",
+    "source": {
+        "type": "vector",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/4W/4W_Matrix_april9.csv",
+        "layer": "zim_admin_2_district",
+        "url": "mapbox://ona.3euuqmiq",
+        "join": [
+            "NAME",
+            "district"
+        ]
+    },
+    "type": "fill",
+    "property": "reached_people_todate",
+    "aggregate": {
+        "type": "sum",
+        "group-by": "district",
+        "extraProps": [
+            "reached_people_todate",
+            "implementing_partner",
+            "district"
+        ],
+        "filter": ["implementing_partner"],
+        "accepted-filter-values": ["all"],
+        "filter-label": ["Implementing Partner"],
+        "filter-type": ["stops"]
+    },
+    "categories": {
+        "breaks": "yes",
+        "color": "Blues",
+        "clusters": 5
+    },
+    "popup": {
+        "header": "district",
+        "body": "<p style=text-align:left;> <b>No of people reached:</b> {{reached_people_todate}}</p>"
+      },
+    "credit": "UNICEF",
+    "visible": false
+}
