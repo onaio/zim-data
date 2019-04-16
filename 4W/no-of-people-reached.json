@@ -3,10 +3,10 @@
     "source": {
         "type": "vector",
         "data": "https://raw.githubusercontent.com/onaio/zim-data/master/4W/4W_Matrix_april9.csv",
-        "layer": "zim_admin_2_district",
-        "url": "mapbox://ona.3euuqmiq",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
         "join": [
-            "NAME",
+            "ADM2_EN",
             "district"
         ]
     },
