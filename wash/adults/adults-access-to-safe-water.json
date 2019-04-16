@@ -2,7 +2,7 @@
     "label": "Number of adults (18 years or older) in affected areas provided with access to safe water and personal hygiene",
     "source": {
         "type": "vector",
-        "data": "data/adults-with-access-safe-drinking-water.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/adults/adults-with-access-safe-drinking-water.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [

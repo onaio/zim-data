@@ -2,7 +2,7 @@
     "label": "Number of adults (18 years or older) provided with critical WASH-related information to prevent waterborne diseases",
     "source": {
         "type": "vector",
-        "data": "data/adults-with-wash-related-info.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/adults/adults-with-wash-related-info.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [
