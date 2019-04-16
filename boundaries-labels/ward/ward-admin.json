@@ -2,8 +2,8 @@
   "label": "Ward Boundaries",
   "source": {
     "type": "vector",
-    "layer": "zimbabweadmin3",
-    "url": "mapbox://ona.1dpyvbku"
+    "layer": "zwe_adm3_ward",
+    "url": "mapbox://ona.98q3m610"
   },
   "type": "line",
   "paint": {
