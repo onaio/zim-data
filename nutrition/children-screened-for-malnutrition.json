@@ -2,7 +2,7 @@
     "label": "Number of children under-5 screened for acute malnutrition",
     "source": {
         "type": "vector",
-        "data": "data/children-screened-for-malnutrition.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/nutrition/children-screened-for-malnutrition.json",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [

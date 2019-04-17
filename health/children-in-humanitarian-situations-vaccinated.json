@@ -2,7 +2,7 @@
     "label": "Number of children aged 6 months to 15 years in humanitarian situations who are vaccinated against measles",
     "source": {
         "type": "vector",
-        "data": "data/children-in-humanitarian-situations-vaccinated.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/health/children-in-humanitarian-situations-vaccinated.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [

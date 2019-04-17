@@ -2,7 +2,7 @@
     "label": "Number of children 6-59 months receiving treatment to common illnesses (pneumonia, diarrhea)",
     "source": {
         "type": "vector",
-        "data": "data/children-receiving-treatment-to-common-illness.csv",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/health/children-receiving-treatment-to-common-illness.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [

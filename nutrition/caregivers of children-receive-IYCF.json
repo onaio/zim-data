@@ -2,7 +2,7 @@
     "label": "Number of primary caregivers of children aged 0-23 months who received IYCF counselling (Std)",
     "source": {
         "type": "vector",
-        "data": "data/caregivers of children-receive-IYCF.csv",
+        "data": "data/https://raw.githubusercontent.com/onaio/zim-data/master/nutrition/caregivers%20of%20children-receive-IYCF.csv",
         "layer": "zim_admin_2_district",
         "url": "mapbox://ona.3euuqmiq",
         "join": [
