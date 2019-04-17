@@ -2,8 +2,8 @@
   "label": "District Boundaries",
   "source": {
     "type": "vector",
-    "layer": "zim_admin_2_district",
-    "url": "mapbox://ona.3euuqmiq"
+    "layer": "zwe_adm2_district",
+    "url": "mapbox://ona.62o31uy4"
   },
   "type": "line",
   "paint": {

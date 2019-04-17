@@ -2,8 +2,8 @@
   "label": "Province Boundaries",
   "source": {
     "type": "vector",
-    "layer": "zim_admin_1_province",
-    "url": "mapbox://ona.8ze9mgc4"
+    "layer": "zwe_adm1_province",
+    "url": "mapbox://ona.9h0dpqlh"
   },
   "type": "line",
   "paint": {
