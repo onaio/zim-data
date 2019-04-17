@@ -24,7 +24,7 @@
     },
     "popup": {
         "header": "Location",
-        "body": "<p style=text-align:left;><b>UNICEF Results: </b> {{UNICEF Results}}<br> <b>Country Total Target: </b> {{Target}}<br></p>"
+        "body": "<p style=text-align:left;><b>UNICEF Results: </b> {{UNICEF Results}}<br> <b>Target: </b> {{Target}}<br></p>"
       },
     "visible": false,
     "menu-credit": "HPM Weekly Results MAtrix"
