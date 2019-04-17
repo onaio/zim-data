@@ -7,7 +7,7 @@
         "url": "mapbox://ona.62o31uy4",
         "join": [
             "ADM2_EN",
-            "district"
+            "District"
         ]
     },
     "type": "fill",
