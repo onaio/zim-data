@@ -1,0 +1,34 @@
+{
+    "label": "No. of Organizations",
+    "source": {
+        "type": "vector",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/nutrition/4W_nutrition_cluster.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "District"
+        ]
+    },
+    "type": "fill",
+    "property": "no_of_partners",
+    "aggregate": {
+        "type": "sum",
+        "group-by": "District",
+        "extraProps": [
+            "no_of_partners",
+            "District"
+        ]
+    },
+    "categories": {
+        "breaks": "yes",
+        "color": "Blues",
+        "clusters": 5
+    },
+    "popup": {
+        "header": "District",
+        "body": "<p style=text-align:left;> <b>No of Organizations:</b> {{no_of_partners}}</p>"
+      },
+    "credit": "UNICEF",
+    "visible": false
+}
