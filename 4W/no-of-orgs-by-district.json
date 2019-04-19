@@ -17,8 +17,50 @@
         "group-by": "District",
         "extraProps": [
             "number_of_partners",
-            "District"
-        ]
+            "District",
+            "partners"
+        ],
+        "filter": ["partners"],
+        "accepted-filter-values": ["multi"],
+        "filter-label": ["Implementing Partner"],
+        "sub-filter": [""],
+        "accepted-sub-filter-values": [""],
+        "filter-type": ["stops"]
+    },
+    "data-parse": {
+        "partners": {
+          "type": "multiple",
+          "key": {
+            "1": "Mercy Corps",
+            "2": "UNICEF/Mercy Corps",
+            "3": "UNICEF",
+            "4": "CARE",
+            "5": "Oxfam",
+            "6": "OFDA",
+            "7": "Private donations/UNICEF",
+            "8": "Foundation",
+            "9": "Save the Children",
+            "10": "Help from Germany",
+            "11": "World Vision",
+            "12": "ADRA Zimbabwe",
+            "13": "DDF",
+            "14": "Christian Care",
+            "15": "Care International",
+            "16": "Lead",
+            "17": "Heifer",
+            "18": "CAFOD",
+            "19": "Plan International",
+            "20": "Tana Consulting",
+            "21": "Africa AHEAD",
+            "22": "unicef",
+            "23": "IRC",
+            "24": "Christian Aid",
+            "25": "Zimbabwe Red Cross Society"
+
+          },
+          "split": " ",
+          "join": ", "
+        }
     },
     "categories": {
         "breaks": "yes",

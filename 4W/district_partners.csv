@@ -1,17 +1,17 @@
-District,number_of_partners
-All,1
-Any,1
-Bikita,2
-Buhera,4
-Chikomba,1
-Chimanimani,14
-Chipinge,11
-Chipinge Rural,1
-Chipnge,1
-Chiredzi,1
-Gutu,1
-Makoni,1
-Masvingo,2
-Mutare,4
-Mutasa,1
-Zaka,6
+District,number_of_partners,partners
+All,1,"3"
+Any,1,"20"
+Bikita,2,"4 21"
+Buhera,4,"1 11 18 24"
+Chikomba,1,"3"
+Chimanimani,15,"1 3 4 5 6 9 10 11 12 18 19 21 3 23 13"
+Chipinge,15,"2 4 5 7 8 9 10 11 18 19 21 3 6 23 24"
+Chipinge Rural,1,"3"
+Chipnge,1,"13"
+Chiredzi,1,"14"
+Gutu,1,"3"
+Makoni,1,"1"
+Masvingo,2,"14 25"
+Mutare,3,"1 3 24"
+Mutasa,1,"1"
+Zaka,6,"13 14 15 16 17"
