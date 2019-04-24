@@ -1,0 +1,91 @@
+Names,Codes,Populations,Province,code
+Bulawayo,21,653337,Harare,ZW1021
+Buhera,101,245878,Manicaland,ZW1101
+Chimanimani,102,134940,Manicaland,ZW1102
+Chipinge,123,25292,Manicaland,ZW1103
+Makoni,104,272340,Manicaland,ZW1104
+Mutare,121,187621,Manicaland,ZW1105
+Mutasa,106,168747,Manicaland,ZW1106
+Nyanga,107,126599,Manicaland,ZW1107
+Mutare Urban,105,262124,Manicaland,ZW1121
+Rusape,122,30316,Manicaland,ZW1122
+Bindura,201,125219,Mash Central,ZW1201
+Guruve,203,124041,Mash Central,ZW1203
+Mazowe,204,233450,Mash Central,ZW1204
+Mount Darwin,205,212725,Mash Central,ZW1205
+Rushinga,206,74040,Mash Central,ZW1206
+Shamva,207,123650,Mash Central,ZW1207
+Mbire,208,82380,Mash Central,ZW1208
+Mvurwi,222,10549,Mash Central,ZW1209
+Bindura Urban,221,43675,Mash Central,ZW1221
+Chikomba,301,120986,Mash East,ZW1301
+Goromonzi,302,224987,Mash East,ZW1302
+Hwedza,303,70968,Mash East,ZW1303
+Marondera,321,61998,Mash East,ZW1304
+Mudzi,305,133252,Mash East,ZW1305
+Murehwa,306,199607,Mash East,ZW1306
+Mutoko,307,146127,Mash East,ZW1307
+Seke,308,100756,Mash East,ZW1308
+Uzumba Maramba Pfungwe,309,112611,Mash East,ZW1309
+Marondera Urban,304,116985,Mash East,ZW1321
+Ruwa,323,56678,Mash East,ZW1326
+Chegutu,423,50590,Mash West,ZW1401
+Hurungwe,402,329197,Mash West,ZW1402
+Kadoma Urban,422,92469,Mash West,ZW1403
+Kariba,424,26451,Mash West,ZW1404
+Makonde,405,153540,Mash West,ZW1405
+Zvimba,406,263020,Mash West,ZW1406
+Chinhoyi,421,77929,Mash West,ZW1421
+Chegutu Urban,401,153655,Mash West,ZW1423
+Kariba Urban,404,41369,Mash West,ZW1424
+Norton,425,67591,Mash West,ZW1425
+Karoi,426,28606,Mash West,ZW1426
+Mhondoro-Ngezi,403,104342,Mash West,ZW1427
+Sanyati,407,112897,Mash West,ZW1428
+Binga,501,139092,Mat North,ZW1501
+Bubi,502,61883,Mat North,ZW1502
+Hwange,521,37522,Mat North,ZW1503
+Lupane,504,100161,Mat North,ZW1504
+Nkayi,505,109135,Mat North,ZW1505
+Tsholotsho,506,115119,Mat North,ZW1506
+Umguza,507,89687,Mat North,ZW1507
+Hwange Urban,503,62670,Mat North,ZW1521
+Victoria Falls,522,33748,Mat North,ZW1522
+Beitbridge,622,42137,Mat South,ZW1601
+Bulilima,602,90561,Mat South,ZW1602
+Mangwe,603,66218,Mat South,ZW1603
+Gwanda,621,20227,Mat South,ZW1604
+Insiza,605,100333,Mat South,ZW1605
+Matobo,606,93940,Mat South,ZW1606
+Umzingwane,607,62990,Mat South,ZW1607
+Gwanda Urban,604,115778,Mat South,ZW1621
+Beitbridge Urban,601,80083,Mat South,ZW1622
+Plumtree,623,11626,Mat South,ZW1623
+Chirumhanzu,701,80351,Midlands,ZW1701
+Gokwe North,702,240352,Midlands,ZW1702
+Gokwe South,703,305982,Midlands,ZW1703
+Gweru,721,157865,Midlands,ZW1704
+Kwekwe,722,100900,Midlands,ZW1705
+Mberengwa,706,185757,Midlands,ZW1706
+Shurugwi,726,21905,Midlands,ZW1707
+Zvishavane,708,72513,Midlands,ZW1708
+Gweru Urban,704,91806,Midlands,ZW1721
+Kwekwe Urban,705,174727,Midlands,ZW1722
+Redcliff,723,35929,Midlands,ZW1723
+Zvishavane Urban,724,45230,Midlands,ZW1725
+Shurugwi Town,707,77570,Midlands,ZW1728
+Gokwe South Urban,725,24054,Midlands,ZW1729
+Bikita,801,162356,Masvingo,ZW1801
+Chiredzi,802,275759,Masvingo,ZW1802
+Chivi,803,166049,Masvingo,ZW1803
+Gutu,804,203083,Masvingo,ZW1804
+Masvingo,821,87886,Masvingo,ZW1805
+Mwenezi,806,166993,Masvingo,ZW1806
+Zaka,807,181301,Masvingo,ZW1807
+Masvingo Urban,805,211215,Masvingo,ZW1821
+Chiredzi Urban,822,30448,Masvingo,ZW1822
+Chitungwiza,922,356840,Harare,ZW1922
+Epworth,923,167462,Harare,ZW1923
+Harare Rural,901,113599,Harare,ZW1924
+Muzarabani,202,122791,Mash Central,#N/A
+Harare,901,113599,Harare,
