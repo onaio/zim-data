@@ -2,7 +2,7 @@
   "label": "District Population",
   "source": {
     "type": "vector",
-    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-district-pop/Zimbabwe%20Population%20Data%20-%20district.csv",
+    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-district-pop/Zimbabwe_Population_Data_district.csv",
     "layer": "zwe_adm2_district",
     "url": "mapbox://ona.62o31uy4",
     "join": ["ADM2_EN", "Names"]
