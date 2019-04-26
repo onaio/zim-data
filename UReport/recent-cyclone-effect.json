@@ -1,0 +1,24 @@
+{
+    "label": "Was your area affected by the recent Cyclone Idai floods?",
+    "source": {
+      "type": "vector",
+      "data": "https://raw.githubusercontent.com/onaio/zim-data/master/UReport/health_access.csv",
+      "layer": "zwe_adm1_province",
+      "url": "mapbox://ona.9h0dpqlh",
+      "join": ["ADM1_EN", "Names"]
+    },
+    "id": "zim-province-pop",
+    "type": "fill",
+    "property": "recent_Cyclone_Idai_floods_total",
+    "categories": {
+      "breaks": "yes",
+      "color": "Greens",
+      "clusters": 5
+    },
+    "popup": {
+      "header": "Names",
+      "body": "<p style=text-align:left;> <b>Total responses:</b> {{recent_Cyclone_Idai_floods_total}}<br> <b> Yes:</b> {{recent_Cyclone_Idai_floods}}<br> <b> NO:</b> {{recent_Cyclone_Idai_floods_no}}<span style=float:right;>"
+    },
+    "visible": false,
+    "credit": " "
+  }
