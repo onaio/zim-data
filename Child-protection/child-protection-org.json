@@ -1,0 +1,34 @@
+{"label": "No. of Organizations",
+    "source": {
+        "type": "vector",
+        "data": "data/Child_protection_partners.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "District"
+        ]
+    },
+    "type": "fill",
+    "property": "number_of_partners",
+    "aggregate": {
+        "type": "sum",
+        "group-by": "District",
+        "extraProps": [
+            "number_of_partners",
+            "District",
+            "partners"
+        ]
+    }, 
+    "categories": {
+        "breaks": "yes",
+        "color": "Blues",
+        "clusters": 5
+    },
+    "popup": {
+        "header": "District",
+        "body": "<p style=text-align:left;> <b>No of Organizations:</b> {{number_of_partners}}</p>"
+      },
+    "credit": "UNICEF",
+    "visible": false
+}
