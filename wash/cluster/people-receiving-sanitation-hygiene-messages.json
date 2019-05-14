@@ -1,0 +1,56 @@
+{
+    "label": "Number of people receiving sanitation and hygiene messages",
+    "source": {
+        "type": "vector",
+        "data": "https://raw.githubusercontent.com/onaio/zim-data/master/wash/cluster/sanitation-hygiene-messages.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "District"
+        ]
+    },
+    "type": "fill",
+    "property": "individualsreached",
+    "categories": {
+        "breaks": "yes",
+        "color":"Greens",
+        "clusters": 7
+    },
+    "aggregate": {
+        "type": "sum",
+        "group-by": "District",
+        "date-by": "Date",
+        "extraProps": [
+            "District",
+            "Date",
+            "individualsreached",
+            "individualstargeted"
+        ],
+        "timeseries": {
+            "field": "period"
+        }
+    },
+    "popup": {
+        "body": " <p style=text-align:left;> <b>District:</b> {{District}}<br> <b> Number of Individuals Reached:</b> {{individualsreached}} <br> <b> Number of Individuals Targeted:</b> {{individualstargeted}}<span style=float:left;>"
+    },
+    "visible": false,
+    "credit": " ",
+    "category": "Rates",
+    "charts": {
+        "pie": {
+            "type": "breaks",
+            "level": "District",
+            "column": "individualsreached",
+            "suffix": "%"
+        },
+        "primary": {
+            "type": "column",
+            "spec": {
+                "type": "percent",
+                "level": "District",
+                "column": "individualsreached"
+            }
+        }
+    }
+}
