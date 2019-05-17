@@ -1,0 +1,52 @@
+{
+    "label": "Humanitarian Performance Matrix (HPM) - Nutrition ",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 336
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "NAME",
+            "location"
+        ]
+    },
+    "type": "fill",
+    "property": "percent_results_unicef",
+    "categories": {
+        "breaks": "yes",
+        "color": "Oranges",
+        "clusters": 5
+    },
+    "aggregate": {
+        "filter": [
+            "indicator"
+        ],
+        "accepted-filter-values": [
+            "multi"
+        ],
+        "filter-label": [
+            "Indicator"
+        ],
+        "filter-type": [
+            "vBool"
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week"
+        }
+    },
+    "data-parse": {
+        "indicator": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results}}<b>Female:</b> {{female}}<br><b>Male:</b> {{male}}<br><b>Disabled:</b> {{disabled}}</p>"
+    },
+    "visible": false,
+    "credit": "<a href='https://discover.ona.io//superset/slice_json/335' target='_blank'>Superset Connector</a>"
+}
