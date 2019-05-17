@@ -9,7 +9,7 @@
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
-            "NAME",
+            "ADM2_EN",
             "location"
         ]
     },
@@ -21,27 +21,23 @@
         "clusters": 5
     },
     "aggregate": {
-        "filter": [
+        "type": "sum",
+        "group-by": "location",
+        "date-by": "week",
+        "extraProps": [
+            "week",
+            "percent_results_unicef",
+            "location",
+            "target",
+            "unicef_results",
+            "female",
+            "male",
+            "disabled",
             "indicator"
-        ],
-        "accepted-filter-values": [
-            "multi"
-        ],
-        "filter-label": [
-            "Indicator"
-        ],
-        "filter-type": [
-            "vBool"
         ],
         "timeseries": {
             "type": "cumulative",
-            "field": "week"
-        }
-    },
-    "data-parse": {
-        "indicator": {
-            "type": "multiple",
-            "split": ","
+            "field": "period"
         }
     },
     "popup": {
