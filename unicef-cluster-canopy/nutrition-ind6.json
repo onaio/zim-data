@@ -1,0 +1,42 @@
+{
+    "label": "Number of primary caregivers of children aged 0-23 months who received IYCF counselling (Std)",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 348
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "location"
+        ]
+    },
+    "type": "fill",
+    "property": "unicef_results",
+    "categories": {
+        "breaks": "yes",
+        "color": "Oranges",
+        "clusters": 5
+    },
+    "aggregate": {
+        "customAggregation": true,
+        "type": "sum",
+        "group-by": "location",
+        "date-by": "week",
+        "extraProps": [
+            "week",
+            "unicef_results"
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
+    },
+    "popup": {
+        "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results}}<br><b>Female:</b> {{female}}<br><b>Male:</b> {{male}}<br><b>Disabled:</b> {{disabled}}</p>"
+    },
+    "visible": false,
+    "credit": "HPM"
+}

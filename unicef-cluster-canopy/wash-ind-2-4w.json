@@ -1,0 +1,56 @@
+{
+    "label": "Number of People Receiving Hygiene Kits (family kit, female dignity kit)",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 355
+        },
+        "layer": "wards_zim",
+        "url": "mapbox://ona.7hhyo4wu",
+        "join": [
+            "ADM3_EN",
+            "ward"
+        ]
+    },
+    "type": "fill",
+    "property": "people_reached",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "customAggregation": true,
+        "type": "sum",
+        "group-by": "ward",
+        "extraProps": [
+            "people_reached",
+            "hhs_reached",
+            "partners"
+        ],
+        "filter": [
+            "partners"
+        ],
+        "accepted-filter-values": [
+            "multi"
+        ],
+        "filter-label": [
+            "Organisations"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "partners": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Households Reached:</b> {{hhs_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
