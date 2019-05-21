@@ -9,7 +9,7 @@
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
         "join": [
-            "ADM3_EN",
+            "ADM3_PCODE",
             "ward"
         ]
     },
