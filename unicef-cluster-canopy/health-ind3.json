@@ -30,11 +30,8 @@
         "filter-label": [
             "District"
         ],
-        "sub-filter": [
-            ""
-        ],
-        "accepted-sub-filter-values": [
-            ""
+        "filter-type": [
+            "vBool"
         ],
         "customAggregation": true,
         "type": "sum",
