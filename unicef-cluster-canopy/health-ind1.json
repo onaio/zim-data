@@ -31,7 +31,12 @@
         ],
         "timeseries": {
             "type": "cumulative",
-            "field": "period"
+            "field": "period",
+            "filter": ["location"],
+            "accepted-filter-values": ["all"],
+            "filter-label": ["District"],
+            "sub-filter": [""],
+            "accepted-sub-filter-values": [""]
         }
     },
     "popup": {

@@ -31,9 +31,24 @@
         ],
         "timeseries": {
             "type": "cumulative",
-            "field": "period"
-        }
-    },
+            "field": "period",
+        "filter": [
+            "location"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "District"
+        ],
+        "sub-filter": [
+            ""
+        ],
+        "accepted-sub-filter-values": [
+            ""
+        ]
+    }
+},
     "popup": {
         "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results}}<br><b>Female:</b> {{female}}<br><b>Male:</b> {{male}}<br><b>Disabled:</b> {{disabled}}</p>"
     },
