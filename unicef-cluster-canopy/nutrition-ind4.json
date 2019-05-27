@@ -21,6 +21,21 @@
         "clusters": 5
     },
     "aggregate": {
+        "filter": [
+            "location"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "District"
+        ],
+        "sub-filter": [
+            ""
+        ],
+        "accepted-sub-filter-values": [
+            ""
+        ],
         "customAggregation": true,
         "type": "sum",
         "group-by": "location",
@@ -31,21 +46,7 @@
         ],
         "timeseries": {
             "type": "cumulative",
-            "field": "period","filter": [
-                "location"
-            ],
-            "accepted-filter-values": [
-                "all"
-            ],
-            "filter-label": [
-                "District"
-            ],
-            "sub-filter": [
-                ""
-            ],
-            "accepted-sub-filter-values": [
-                ""
-            ]
+            "field": "period"
         }
     },
     "popup": {
