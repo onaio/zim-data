@@ -21,17 +21,6 @@
         "clusters": 5
     },
     "aggregate": {
-        "customAggregation": true,
-        "type": "sum",
-        "group-by": "location",
-        "date-by": "week",
-        "extraProps": [
-            "week",
-            "unicef_results"
-        ],
-        "timeseries": {
-            "type": "cumulative",
-            "field": "period",
         "filter": [
             "location"
         ],
@@ -46,9 +35,20 @@
         ],
         "accepted-sub-filter-values": [
             ""
-        ]
-    }
-},
+        ],
+        "customAggregation": true,
+        "type": "sum",
+        "group-by": "location",
+        "date-by": "week",
+        "extraProps": [
+            "week",
+            "unicef_results"
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
+    },
     "popup": {
         "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results}}<br><b>Female:</b> {{female}}<br><b>Male:</b> {{male}}<br><b>Disabled:</b> {{disabled}}</p>"
     },
