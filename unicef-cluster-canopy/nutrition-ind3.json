@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 345
+            "slice-id": 374
         },
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
@@ -12,43 +12,43 @@
             "ADM2_EN",
             "location"
         ]
-    },
-    "type": "fill",
-    "property": "unicef_results",
-    "categories": {
-        "breaks": "yes",
-        "color": "Oranges",
-        "clusters": 5
-    },
-    "aggregate": {
-        "filter": [
-            "location"
-        ],
-        "accepted-filter-values": [
-            "all"
-        ],
-        "filter-label": [
-            "District"
-        ],
-        "filter-type": [
-            "vBool"
-        ],
-        "customAggregation": true,
-        "type": "sum",
-        "group-by": "location",
-        "date-by": "week",
-        "extraProps": [
-            "week",
-            "unicef_results"
-        ],
-        "timeseries": {
-            "type": "cumulative",
-            "field": "period"
-        }
-    },
-    "popup": {
-        "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results}}<br><b>Female:</b> {{female}}<br><b>Male:</b> {{male}}<br><b>Disabled:</b> {{disabled}}</p>"
-    },
+   },
+"type": "fill",
+"property": "unicef_results_agg",
+"categories": {
+    "breaks": "yes",
+    "color": "Oranges",
+    "clusters": 5
+},
+"aggregate": {
+    "filter": [
+        "location"
+    ],
+    "accepted-filter-values": [
+        "all"
+    ],
+    "filter-label": [
+        "District"
+    ],
+    "filter-type": [
+        "vBool"
+    ],
+    "customAggregation": true,
+    "type": "sum",
+    "group-by": "location",
+    "date-by": "week",
+    "extraProps": [
+        "week",
+        "unicef_results_agg"
+    ],
+    "timeseries": {
+        "type": "cumulative",
+        "field": "period"
+    }
+},
+"popup": {
+    "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results_agg}}<br><b>Female:</b> {{female_agg}}<br><b>Male:</b> {{male_agg}}<br><b>Disabled:</b> {{disabled_agg}}</p>"
+},
     "visible": false,
     "credit": "HPM"
 }
