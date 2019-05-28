@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 363
+            "slice-id": 386
         },
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
@@ -24,30 +24,46 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "ward",
-        "extraProps": [
-            "no_partners",
-            "people_reached",
-            "hhs_reached"
-        ],
-        "filter": [
-            "partners"
-        ],
-        "accepted-filter-values": [
-            "multi"
-        ],
-        "filter-label": [
-            "Organisations"
-        ],
-        "filter-type": [
-            "vBool"
-        ]
-    },
-    "data-parse": {
-        "partners": {
-            "type": "multiple",
-            "split": ","
-        }
-    },
+       "extraProps": [
+        "no_partners",   
+        "people_reached",
+        "hhs_reached",
+        "partners",
+        "sub_cluster",
+        "province",
+        "district"
+    ],
+    "filter": [
+        "partners",
+        "sub_cluster",
+        "province",
+        "district"
+    ],
+    "accepted-filter-values": [
+        "multi",
+        "all",
+        "all",
+        "all"
+    ],
+    "filter-label": [
+        "Organisations",
+        "Sub Cluster",
+        "Province",
+        "District"
+    ],
+    "filter-type": [
+        "vBool",
+        "vBool",
+        "vBool",
+        "vBool"
+    ]
+},
+"data-parse": {
+    "partners": {
+        "type": "multiple",
+        "split": ","
+    }
+},
     "popup": {
         "body": " <p style=text-align:left;><b>Total People Reached:</b> {{people_reached}}<br><b>Total Households Reached:</b> {{hhs_reached}}<br><b>All Present Organisations:</b> {{partners}}<br><b>Total Number of Organisations:</b> {{no_partners}}</p>"
     },
