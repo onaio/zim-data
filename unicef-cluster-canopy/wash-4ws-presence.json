@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 362
+            "slice-id": 388
         },
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
@@ -26,18 +26,33 @@
         "group-by": "ward",
         "extraProps": [
             "no_partners",
-            "partners"
+            "partners",
+            "sub_cluster",
+            "province",
+            "district"
         ],
         "filter": [
-            "partners"
+            "partners",
+            "sub_cluster",
+            "province",
+            "district"
         ],
         "accepted-filter-values": [
-            "multi"
+            "multi",
+            "all",
+            "all",
+            "all"
         ],
         "filter-label": [
-            "Organisations"
+            "Organisations",
+            "Sub Cluster",
+            "Province",
+            "District"
         ],
         "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
             "vBool"
         ]
     },
