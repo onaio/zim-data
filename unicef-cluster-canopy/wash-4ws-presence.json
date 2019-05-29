@@ -24,7 +24,6 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "ward",
-        "date-by": "update_date",
         "extraProps": [
             "no_partners",
             "partners",
@@ -55,11 +54,7 @@
             "vBool",
             "vBool",
             "vBool"
-        ],
-        "timeseries": {
-            "type": "cumulative",
-            "field": "period"
-        }
+        ]
     },
     "data-parse": {
         "partners": {
