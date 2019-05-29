@@ -1,16 +1,16 @@
 {
-    "label": "Number of People Receiving Hygiene Kits (family kit, female dignity kit)",
+    "label": "Number of People with Access to Appropriate Sanitation - District Level ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 380
+            "slice-id": 402
         },
-        "layer": "wards_zim",
-        "url": "mapbox://ona.7hhyo4wu",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
         "join": [
-            "ADM3_PCODE",
-            "ward"
+            "ADM2_EN",
+            "district"
         ]
     },
     "type": "fill",
@@ -23,39 +23,39 @@
     "aggregate": {
         "customAggregation": true,
         "type": "sum",
-        "group-by": "ward",
+        "group-by": "district",
+        "date-by": "update_date",
         "extraProps": [
             "people_reached",
             "hhs_reached",
             "partners",
             "sub_cluster",
-            "province",
-            "district"
+            "province"
         ],
         "filter": [
             "partners",
             "sub_cluster",
-            "province",
-            "district"
+            "province"
         ],
         "accepted-filter-values": [
             "multi",
-            "all",
             "all",
             "all"
         ],
         "filter-label": [
             "Organisations",
             "Sub Cluster",
-            "Province",
-            "District"
+            "Province"
         ],
         "filter-type": [
             "vBool",
             "vBool",
-            "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
     },
     "data-parse": {
         "partners": {

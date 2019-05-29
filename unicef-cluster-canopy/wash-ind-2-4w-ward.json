@@ -1,10 +1,10 @@
 {
-    "label": "Number of People with Access to Appropriate Sanitation",
+    "label": "Number of People Receiving Hygiene Kits (family kit, female dignity kit) - Ward Level",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 383
+            "slice-id": 390
         },
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
@@ -24,6 +24,7 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "ward",
+        "date-by": "update_date",
         "extraProps": [
             "people_reached",
             "hhs_reached",
@@ -55,7 +56,11 @@
             "vBool",
             "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
     },
     "data-parse": {
         "partners": {

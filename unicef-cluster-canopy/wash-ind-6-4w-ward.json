@@ -1,10 +1,10 @@
 {
-    "label": "Number of People Receiving WASH NFI Kits",
+    "label": "Number of People with Access to Handwashing Facilities - Ward Level",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 382
+            "slice-id": 394
         },
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
@@ -24,39 +24,43 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "ward",
-       "extraProps": [
-        "people_reached",
-        "hhs_reached",
-        "partners",
-        "sub_cluster",
-        "province",
-        "district"
-    ],
-    "filter": [
-        "partners",
-        "sub_cluster",
-        "province",
-        "district"
-    ],
-    "accepted-filter-values": [
-        "multi",
-        "all",
-        "all",
-        "all"
-    ],
-    "filter-label": [
-        "Organisations",
-        "Sub Cluster",
-        "Province",
-        "District"
-    ],
-    "filter-type": [
-        "vBool",
-        "vBool",
-        "vBool",
-        "vBool"
-    ]
-},
+        "extraProps": [
+            "people_reached",
+            "hhs_reached",
+            "partners",
+            "sub_cluster",
+            "province",
+            "district"
+        ],
+        "filter": [
+            "partners",
+            "sub_cluster",
+            "province",
+            "district"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Organisations",
+            "Sub Cluster",
+            "Province",
+            "District"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
+    },
     "data-parse": {
         "partners": {
             "type": "multiple",

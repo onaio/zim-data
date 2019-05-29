@@ -1,10 +1,10 @@
 {
-    "label": "Number of People Reached with Other WASH Services",
+    "label": "Number of People Receiving Sanitation and Hygiene Messages - Ward Level",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 379
+            "slice-id": 391
         },
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
@@ -24,6 +24,7 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "ward",
+        "date-by": "update_date",
         "extraProps": [
             "people_reached",
             "hhs_reached",
@@ -55,7 +56,11 @@
             "vBool",
             "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
     },
     "data-parse": {
         "partners": {

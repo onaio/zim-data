@@ -1,20 +1,20 @@
 {
-    "label": "Presence",
+    "label": "Number of People Receiving Hygiene Kits (family kit, female dignity kit) - District Level ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 396
+            "slice-id": 399
         },
-        "layer": "wards_zim",
-        "url": "mapbox://ona.7hhyo4wu",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
         "join": [
-            "ADM3_PCODE",
-            "ward"
+            "ADM2_EN",
+            "district"
         ]
     },
     "type": "fill",
-    "property": "no_partners",
+    "property": "people_reached",
     "categories": {
         "breaks": "yes",
         "color": "Greens",
@@ -23,36 +23,31 @@
     "aggregate": {
         "customAggregation": true,
         "type": "sum",
-        "group-by": "ward",
+        "group-by": "district",
         "date-by": "update_date",
         "extraProps": [
-            "no_partners",
+            "people_reached",
+            "hhs_reached",
             "partners",
             "sub_cluster",
-            "province",
-            "district"
+            "province"
         ],
         "filter": [
             "partners",
             "sub_cluster",
-            "province",
-            "district"
+            "province"
         ],
         "accepted-filter-values": [
             "multi",
-            "all",
             "all",
             "all"
         ],
         "filter-label": [
             "Organisations",
             "Sub Cluster",
-            "Province",
-            "District"
+            "Province"
         ],
         "filter-type": [
-            "vBool",
-            "vBool",
             "vBool",
             "vBool"
         ],
@@ -68,7 +63,7 @@
         }
     },
     "popup": {
-        "body": "<p style=text-align:left;><b>Number of Organisations:</b> {{no_partners}}<br><b>Present Organisations:</b> {{partners}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Households Reached:</b> {{hhs_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
