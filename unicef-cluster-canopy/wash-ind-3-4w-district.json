@@ -1,16 +1,16 @@
 {
-    "label": "Number of People with Access to Safe & Sufficient Quantity of Water",
+    "label": "Number of People Receiving Sanitation and Hygiene Messages - District Level ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 385
+            "slice-id": 400
         },
-        "layer": "wards_zim",
-        "url": "mapbox://ona.7hhyo4wu",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
         "join": [
-            "ADM3_PCODE",
-            "ward"
+            "ADM2_EN",
+            "district"
         ]
     },
     "type": "fill",
@@ -23,39 +23,39 @@
     "aggregate": {
         "customAggregation": true,
         "type": "sum",
-        "group-by": "ward",
+        "group-by": "district",
+        "date-by": "update_date",
         "extraProps": [
             "people_reached",
             "hhs_reached",
             "partners",
             "sub_cluster",
-            "province",
-            "district"
+            "province"
         ],
         "filter": [
             "partners",
             "sub_cluster",
-            "province",
-            "district"
+            "province"
         ],
         "accepted-filter-values": [
             "multi",
-            "all",
             "all",
             "all"
         ],
         "filter-label": [
             "Organisations",
             "Sub Cluster",
-            "Province",
-            "District"
+            "Province"
         ],
         "filter-type": [
             "vBool",
             "vBool",
-            "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
     },
     "data-parse": {
         "partners": {
