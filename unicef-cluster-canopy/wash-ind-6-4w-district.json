@@ -24,7 +24,7 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "district",
-        "date-by": "update_date",
+   
         "extraProps": [
             "people_reached",
             "hhs_reached",
@@ -51,11 +51,7 @@
             "vBool",
             "vBool",
             "vBool"
-        ],
-        "timeseries": {
-            "type": "cumulative",
-            "field": "period"
-        }
+        ]
     },
     "data-parse": {
         "partners": {
