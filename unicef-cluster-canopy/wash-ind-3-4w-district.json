@@ -59,6 +59,7 @@
         }
     },
     "popup": {
+        "header": "district",
         "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Households Reached:</b> {{hhs_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
     },
     "visible": false,

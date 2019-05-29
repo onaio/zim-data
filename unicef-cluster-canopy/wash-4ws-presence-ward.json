@@ -1,10 +1,10 @@
 {
-    "label": "Number of People with Access to Appropriate Sanitation - Ward Level",
+    "label": "Presence - Ward Level",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 393
+            "slice-id": 396
         },
         "layer": "wards_zim",
         "url": "mapbox://ona.7hhyo4wu",
@@ -14,7 +14,7 @@
         ]
     },
     "type": "fill",
-    "property": "people_reached",
+    "property": "no_partners",
     "categories": {
         "breaks": "yes",
         "color": "Greens",
@@ -25,8 +25,7 @@
         "type": "sum",
         "group-by": "ward",
         "extraProps": [
-            "people_reached",
-            "hhs_reached",
+            "no_partners",
             "partners",
             "sub_cluster",
             "province",
@@ -65,7 +64,7 @@
     },
     "popup": {
         "header": "ward",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Households Reached:</b> {{hhs_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+        "body": "<p style=text-align:left;><b>Number of Organisations:</b> {{no_partners}}<br><b>Present Organisations:</b> {{partners}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

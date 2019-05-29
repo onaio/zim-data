@@ -47,6 +47,7 @@
     }
 },
 "popup": {
+    "header": "location",
     "body": " <p style=text-align:left;><b>Target:</b> {{target}}<br><b>UNICEF Results:</b> {{unicef_results_agg}}<br><b>Female:</b> {{female_agg}}<br><b>Male:</b> {{male_agg}}<br><b>Disabled:</b> {{disabled_agg}}</p>"
 },
     "visible": false,

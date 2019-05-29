@@ -1,5 +1,5 @@
 {
-    "label": "Total Number of People Reached by WASH Services",
+    "label": "Total Number of People Reached by WASH Services - Ward Level",
     "source": {
         "type": "vector",
         "data": {
@@ -65,6 +65,7 @@
     }
 },
     "popup": {
+        "header": "ward",
         "body": " <p style=text-align:left;><b>Total People Reached:</b> {{people_reached}}<br><b>Total Households Reached:</b> {{hhs_reached}}<br><b>All Present Organisations:</b> {{partners}}<br><b>Total Number of Organisations:</b> {{no_partners}}</p>"
     },
     "visible": false,
