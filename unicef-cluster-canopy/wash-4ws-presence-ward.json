@@ -13,6 +13,13 @@
             "ward"
         ]
     },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
     "type": "fill",
     "property": "no_partners",
     "categories": {
