@@ -10,7 +10,7 @@
         "url": "mapbox://ona.7hhyo4wu",
         "join": [
             "ADM3_PCODE",
-            "hhs_reached"
+            "ward"
         ]
     },
     "location": {
@@ -30,9 +30,11 @@
     "aggregate": {
         "customAggregation": true,
         "type": "sum",
-        "group-by": "hhs_reached",
+        "group-by": "ward",
+      
         "extraProps": [
             "people_reached",
+            "hhs_reached",
             "partners",
             "sub_cluster",
             "province",
@@ -71,7 +73,7 @@
     },
     "popup": {
         "header": "ward",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Households Reached:</b> {{hhs_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
