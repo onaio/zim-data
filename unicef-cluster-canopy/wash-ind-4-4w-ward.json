@@ -10,7 +10,7 @@
         "url": "mapbox://ona.7hhyo4wu",
         "join": [
             "ADM3_PCODE",
-            "ward"
+            "hhs_reached"
         ]
     },
     "location": {
@@ -30,40 +30,39 @@
     "aggregate": {
         "customAggregation": true,
         "type": "sum",
-        "group-by": "ward",
-       "extraProps": [
-        "people_reached",
-        "hhs_reached",
-        "partners",
-        "sub_cluster",
-        "province",
-        "district"
-    ],
-    "filter": [
-        "partners",
-        "sub_cluster",
-        "province",
-        "district"
-    ],
-    "accepted-filter-values": [
-        "multi",
-        "all",
-        "all",
-        "all"
-    ],
-    "filter-label": [
-        "Organisations",
-        "Sub Cluster",
-        "Province",
-        "District"
-    ],
-    "filter-type": [
-        "vBool",
-        "vBool",
-        "vBool",
-        "vBool"
-    ]
-},
+        "group-by": "hhs_reached",
+        "extraProps": [
+            "people_reached",
+            "partners",
+            "sub_cluster",
+            "province",
+            "district"
+        ],
+        "filter": [
+            "partners",
+            "sub_cluster",
+            "province",
+            "district"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Organisations",
+            "Sub Cluster",
+            "Province",
+            "District"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
     "data-parse": {
         "partners": {
             "type": "multiple",
@@ -72,7 +71,7 @@
     },
     "popup": {
         "header": "ward",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Households Reached:</b> {{hhs_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
