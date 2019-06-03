@@ -6,10 +6,10 @@
             "type": "superset",
             "slice-id": 396
         },
-        "layer": "wards_zim",
-        "url": "mapbox://ona.7hhyo4wu",
+        "layer": "full_ward_name",
+        "url": "mapbox://ona.a39a9kz8",
         "join": [
-            "ADM3_PCODE",
+            "ward",
             "ward"
         ]
     },
