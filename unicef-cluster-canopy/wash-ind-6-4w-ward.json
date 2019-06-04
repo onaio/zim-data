@@ -6,7 +6,7 @@
             "type": "superset",
             "slice-id": 394
          },
-        "layer": "full_ward_name",
+        "layer": "full_ward_name_new",
         "url": "mapbox://ona.a39a9kz8",
         "join": [
             "ward_name",
