@@ -9,8 +9,8 @@
         "layer": "full_ward_name",
         "url": "mapbox://ona.a39a9kz8",
         "join": [
-            "ward",
-            "ward_name"
+            "ward_name",
+            "ward"
         ]
     },
     "location": {
