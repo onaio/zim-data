@@ -61,7 +61,7 @@
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Total People Reached:</b> {{people_reached}}<br><b>Total Households Reached:</b> {{hhs_reached}}<br><b>All Present Organisations:</b> {{partners}}<br><b>Total Number of Organisations:</b> {{no_partners}}</p>"
+        "body": " <p style=text-align:left;><b>Total People Reached:</b> {{people_reached}}<br><b>All Present Organisations:</b> {{partners}}<br><b>Total Number of Organisations:</b> {{no_partners}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
