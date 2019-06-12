@@ -4,13 +4,13 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 394
+            "slice-id": 435
          },
-        "layer": "full_ward_name_new",
-        "url": "mapbox://ona.a39a9kz8",
+        "layer": "zwe_adm3_ward",
+        "url": "mapbox://ona.98q3m610",
         "join": [
-            "ward_name",
-            "ward"
+            "ADM3_PCODE",
+            "ward_code"
         ]
     },
     "location": {
@@ -21,44 +21,40 @@
         }
     },
     "type": "fill",
-    "property": "people_reached",
+    "property": "reached_people",
     "categories": {
         "breaks": "yes",
         "color": "Greens",
         "clusters": 5
     },
     "aggregate": {
-        "customAggregation": true,
-        "type": "sum",
-        "group-by": "ward",
-
-        "extraProps": [
-            "people_reached",
-            "hhs_reached",
-            "partners",
-            "sub_cluster",
-            "province",
-            "district"
-        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
         "filter": [
-            "partners",
-            "sub_cluster",
+            "partner_acronyms",
+            "sub_clusters",
             "province",
-            "district"
+            "district",
+            "ward"
         ],
         "accepted-filter-values": [
+            "multi",
             "multi",
             "all",
             "all",
             "all"
         ],
         "filter-label": [
-            "Organisations",
-            "Cluster",
+            "Implementing Partners",
+            "Sub Clusters",
             "Province",
-            "District"
+            "District",
+            "Ward"
         ],
         "filter-type": [
+            "vBool",
             "vBool",
             "vBool",
             "vBool",
@@ -66,14 +62,18 @@
         ]
     },
     "data-parse": {
-        "partners": {
+        "partner_acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "sub_clusters": {
             "type": "multiple",
             "split": ","
         }
     },
     "popup": {
         "header": "ward",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_people}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

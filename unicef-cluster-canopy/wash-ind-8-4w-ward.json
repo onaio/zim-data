@@ -1,17 +1,24 @@
 {
-    "label": "Number of People with Access to Safe & Sufficient Quantity of Water - District Level ",
+    "label": "Number of People Receiving PARTIAL Hygiene kits (family kit, female dignity kit) - Ward Level",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 444
+            "slice-id": 431
         },
-        "layer": "zwe_adm2_district",
-        "url": "mapbox://ona.62o31uy4",
+        "layer": "zwe_adm3_ward",
+        "url": "mapbox://ona.98q3m610",
         "join": [
-            "ADM2_EN",
-            "district"
+            "ADM3_PCODE",
+            "ward_code"
         ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
     },
     "type": "fill",
     "property": "reached_people",
@@ -29,11 +36,13 @@
             "partner_acronyms",
             "sub_clusters",
             "province",
-            "district"
+            "district",
+            "ward"
         ],
         "accepted-filter-values": [
             "multi",
             "multi",
+            "all",
             "all",
             "all"
         ],
@@ -41,9 +50,11 @@
             "Implementing Partners",
             "Sub Clusters",
             "Province",
-            "District"
+            "District",
+            "Ward"
         ],
         "filter-type": [
+            "vBool",
             "vBool",
             "vBool",
             "vBool",
@@ -61,7 +72,7 @@
         }
     },
     "popup": {
-        "header": "district",
+        "header": "ward",
         "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_people}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
     },
     "visible": false,

@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 399
+            "slice-id": 438
         },
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
@@ -14,52 +14,55 @@
         ]
     },
     "type": "fill",
-    "property": "people_reached",
+    "property": "reached_people",
     "categories": {
         "breaks": "yes",
         "color": "Greens",
         "clusters": 5
     },
     "aggregate": {
-        "customAggregation": true,
-        "type": "sum",
-        "group-by": "district",
-        "extraProps": [
-            "people_reached",
-            "hhs_reached",
-            "partners",
-            "sub_cluster",
-            "province"
-        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
         "filter": [
-            "partners",
-            "sub_cluster",
-            "province"
+            "partner_acronyms",
+            "sub_clusters",
+            "province",
+            "district"
         ],
         "accepted-filter-values": [
+            "multi",
             "multi",
             "all",
             "all"
         ],
         "filter-label": [
-            "Organisations",
-            "Cluster",
-            "Province"
+            "Implementing Partners",
+            "Sub Clusters",
+            "Province",
+            "District"
         ],
         "filter-type": [
+            "vBool",
+            "vBool",
             "vBool",
             "vBool"
         ]
     },
     "data-parse": {
-        "partners": {
+        "partner_acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "sub_clusters": {
             "type": "multiple",
             "split": ","
         }
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_people}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 410
+            "slice-id": 451
         },
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
@@ -14,36 +14,30 @@
         ]
     },
     "type": "fill",
-    "property": "people_reached",
+    "property": "reached_people",
     "categories": {
         "breaks": "yes",
         "color": "Greens",
         "clusters": 5
     },
     "aggregate": {
-        "customAggregation": true,
-        "type": "sum",
-        "group-by": "province",
-        "extraProps": [
-            "people_reached",
-            "hhs_reached",
-            "partners",
-            "sub_cluster",
-            "province"
-        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
         "filter": [
-            "partners",
-            "sub_cluster",
+            "partner_acronyms",
+            "sub_clusters",
             "province"
         ],
         "accepted-filter-values": [
             "multi",
-            "all",
+            "multi",
             "all"
         ],
         "filter-label": [
-            "Organisations",
-            "Cluster",
+            "Implementing Partners",
+            "Sub Clusters",
             "Province"
         ],
         "filter-type": [
@@ -53,14 +47,18 @@
         ]
     },
     "data-parse": {
-        "partners": {
+        "partner_acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "sub_clusters": {
             "type": "multiple",
             "split": ","
         }
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{people_reached}}<br><b>Present Organisations:</b> {{partners}}<br><b>Number of Organisations:</b> {{no_partners}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_people}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

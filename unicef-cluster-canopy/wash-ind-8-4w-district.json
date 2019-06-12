@@ -1,10 +1,10 @@
 {
-    "label": "Number of People with Access to Safe & Sufficient Quantity of Water - District Level ",
+    "label": "Number of People Receiving PARTIAL Hygiene kits (family kit, female dignity kit) - District Level ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 444
+            "slice-id": 439
         },
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
