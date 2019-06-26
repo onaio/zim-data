@@ -1,0 +1,69 @@
+{
+    "label": "Number of People Receiving NFI Kits - District Level ",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 539
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "district"
+        ]
+    },
+    "type": "fill",
+    "property": "reached_people",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "partner_acronyms",
+            "sub_clusters",
+            "province",
+            "district"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Implementing Partners",
+            "Sub Clusters",
+            "Province",
+            "District"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "partner_acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "sub_clusters": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "district",
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_people}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
