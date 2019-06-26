@@ -1,0 +1,58 @@
+{
+    "label": "Education Emergency Supply Distribution - Small Tents",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 536
+        },
+        "layer": "education_emergency_supplies_-atj2me",
+        "url": "mapbox://ona.9o7js2qp",
+        "join": [
+            "schoolnumber",
+            "schoolnumber"
+        ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
+    "type": "circle",
+    "property": "small_tent",
+    "categories": {
+        "breaks": "yes",
+        "color": "PuRd",
+        "clusters": 5
+    },
+    "aggregate": {
+        "filter": [
+            "province",
+            "district",
+            "school_name"
+        ],
+        "accepted-filter-values": [
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Province",
+            "District",
+            "School Name"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "school_name",
+        "body": " <p style=text-align:left;><b>Small Tents Supplied:</b>{{small_tent}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}
