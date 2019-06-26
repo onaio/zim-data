@@ -1,0 +1,80 @@
+{
+    "label": "Number of People Receiving NFI Kits - Ward Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 537
+        },
+        "layer": "zwe_adm3_ward",
+        "url": "mapbox://ona.98q3m610",
+        "join": [
+            "ADM3_PCODE",
+            "ward_code"
+        ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
+    "type": "fill",
+    "property": "reached_people",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "partner_acronyms",
+            "sub_clusters",
+            "province",
+            "district",
+            "ward"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Implementing Partners",
+            "Sub Clusters",
+            "Province",
+            "District",
+            "Ward"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "partner_acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "sub_clusters": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "ward",
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_people}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
