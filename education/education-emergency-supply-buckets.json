@@ -1,5 +1,5 @@
 {
-    "label": "Education Emergency Supply Distribution - Buckets",
+    "label": "Buckets",
     "source": {
         "type": "vector",
         "data": {
@@ -24,7 +24,7 @@
     "property": "bucket",
     "categories": {
         "breaks": "yes",
-        "color": "Blues",
+        "color": "#1c9099",
         "clusters": 5
     },
     "aggregate": {
@@ -47,7 +47,11 @@
             "vBool",
             "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        }
     },
     "popup": {
         "header": "school_name",
