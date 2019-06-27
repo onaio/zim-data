@@ -1,5 +1,5 @@
 {
-    "label": "Education Emergency Supply Distribution - Recreational Kits",
+    "label": "Recreational Kits",
     "source": {
         "type": "vector",
         "data": {
@@ -24,7 +24,7 @@
     "property": "recreational_kit",
     "categories": {
         "breaks": "yes",
-        "color": "Reds",
+        "color": "#FFFF00",
         "clusters": 5
     },
     "aggregate": {
@@ -47,7 +47,11 @@
             "vBool",
             "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        }
     },
     "popup": {
         "header": "school_name",

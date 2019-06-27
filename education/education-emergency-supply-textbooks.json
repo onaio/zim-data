@@ -1,5 +1,5 @@
 {
-    "label": "Education Emergency Supply Distribution - Textbooks",
+    "label": "Textbooks",
     "source": {
         "type": "vector",
         "data": {
@@ -47,7 +47,11 @@
             "vBool",
             "vBool",
             "vBool"
-        ]
+        ],
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        }
     },
     "popup": {
         "header": "school_name",
