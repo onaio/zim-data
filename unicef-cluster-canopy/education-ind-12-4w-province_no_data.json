@@ -1,0 +1,73 @@
+{
+    "label": "School Fees - Province Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 642
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "reached_number",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "partner_acronyms",
+            "name_school",
+            "unit_type",
+            "province"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "multi",
+            "all"
+        ],
+        "filter-label": [
+            "Implementing Partners",
+            "School Name",
+            "Unit Type",
+            "Province"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "partner_acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "name_school": {
+            "type": "multiple",
+            "split": ","
+        },
+        "unit_type": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_number}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Unit Type:</b> {{unit_type}}<br><b>Number of Units:</b> {{number_units}}<br><b>Number of Schools:</b> {{no_schools}}<br><b>Name of Schools:</b> {{name_school}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
