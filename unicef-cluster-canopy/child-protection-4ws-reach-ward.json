@@ -1,0 +1,80 @@
+{
+    "label": "Total Number of People Reached by Child Protection Services - Ward Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 658
+        },
+        "layer": "full_ward_name_new",
+        "url": "mapbox://ona.a39a9kz8",
+        "join": [
+            "ward_name",
+            "ward"
+        ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
+    "type": "fill",
+    "property": "reached_total",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "organisation_acronym",
+            "types_of_org",
+            "province",
+            "district",
+            "ward"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Implementing Partners",
+            "Organisation Type",
+            "Province",
+            "District",
+            "Ward"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "organisation_acronym": {
+            "type": "multiple",
+            "split": ","
+        },
+        "types_of_org": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "ward",
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_total}}<br><b>Girls Reached:</b>{{reached_girls}}<br><b>Boys Reached:</b> {{reached_boys}}<br><b>Present Organisations:</b> {{organisation_acronym}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}

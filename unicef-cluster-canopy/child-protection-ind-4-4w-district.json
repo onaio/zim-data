@@ -1,0 +1,69 @@
+{
+    "label": "Number of children reached with Psychological first Aid activities(PFA) through child friendly spaces/other safe spaces - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 670
+        },
+       "layer": "zwe_adm2_district",
+    "url": "mapbox://ona.62o31uy4",
+    "join": [
+        "ADM2_EN",
+        "district"
+    ]
+},
+"type": "fill",
+"property": "reached_total",
+"categories": {
+    "breaks": "yes",
+    "color": "Greens",
+    "clusters": 5
+},
+"aggregate": {
+    "timeseries": {
+        "type": "cumulative",
+        "field": "update_date"
+    },
+    "filter": [
+        "organisation_acronym",
+        "types_of_org",
+        "province",
+        "district"
+    ],
+    "accepted-filter-values": [
+        "multi",
+        "multi",
+        "all",
+        "all"
+    ],
+    "filter-label": [
+        "Implementing Partners",
+        "Organisation Type",
+        "Province",
+        "District"
+    ],
+    "filter-type": [
+        "vBool",
+        "vBool",
+        "vBool",
+        "vBool"
+    ]
+},
+"data-parse": {
+    "organisation_acronym": {
+        "type": "multiple",
+        "split": ","
+    },
+    "types_of_org": {
+        "type": "multiple",
+        "split": ","
+    }
+},
+"popup": {
+    "header": "district",
+    "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_total}}<br><b>Girls Reached:</b>{{reached_girls}}<br><b>Boys Reached:</b> {{reached_boys}}<br><b>Present Organisations:</b> {{organisation_acronym}}<br><b>Number of Organisations:</b> {{no_acronyms}}</p>"
+},
+"visible": false,
+"credit": "Cluster"
+}
