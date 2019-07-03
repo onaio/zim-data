@@ -65,7 +65,7 @@
         }
     },
     "popup": {
-        "header": "ward",
+        "header": "province",
         "body": " <p style=text-align:left;><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Present Organisations:</b> {{partner_acronyms}}</p>"
     },
     "visible": false,
