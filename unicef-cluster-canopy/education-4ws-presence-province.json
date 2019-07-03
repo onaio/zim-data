@@ -66,7 +66,7 @@
     },
     "popup": {
         "header": "ward",
-        "body": " <p style=text-align:left;><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Unit Type:</b> {{unit_type}}<br><b>Number of Units:</b> {{number_units}}</p>"
+        "body": " <p style=text-align:left;><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Present Organisations:</b> {{partner_acronyms}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
