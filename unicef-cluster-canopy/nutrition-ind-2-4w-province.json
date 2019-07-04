@@ -1,0 +1,73 @@
+{
+    "label": "Number of Children with SAM - Province Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 703
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "sam_mam_children",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "acronyms",
+            "name_site",
+            "type_site",
+            "province"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "multi",
+            "all"
+        ],
+        "filter-label": [
+            "Reporting Partners",
+            "Site Name",
+            "Site Type",
+            "Province"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "name_site": {
+            "type": "multiple",
+            "split": ","
+        },
+        "type_site": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Number of Children:</b> {{sam_children}}<br><b>Present Organisations:</b> {{acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Site Type:</b> {{type_site}}<br><b>Number of Sites:</b> {{no_sites}}<br><b>Name of Sites:</b> {{name_site}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
