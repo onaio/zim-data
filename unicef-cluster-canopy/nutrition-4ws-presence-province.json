@@ -1,0 +1,73 @@
+{
+    "label": "Presence - Province Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 710
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "no_acronyms",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "acronyms",
+            "name_site",
+            "type_site",
+            "province"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "multi",
+            "all"
+        ],
+        "filter-label": [
+            "Reporting Partners",
+            "Site Name",
+            "Site Type",
+            "Province"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "name_site": {
+            "type": "multiple",
+            "split": ","
+        },
+        "type_site": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Present Organisations:</b> {{acronyms}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}

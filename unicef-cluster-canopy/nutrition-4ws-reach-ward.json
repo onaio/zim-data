@@ -1,0 +1,88 @@
+{
+    "label": "Total Number of People Reached by Nutrition Services - Ward Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 707
+        },
+        "layer": "full_ward_name_new",
+        "url": "mapbox://ona.a39a9kz8",
+        "join": [
+            "ward_name",
+            "ward"
+        ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
+    "type": "fill",
+    "property": "total_beneficiaries",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "acronyms",
+            "name_site",
+            "type_site",
+            "province",
+            "district",
+            "ward"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "multi",
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Reporting Partners",
+            "Site Name",
+            "Site Type",
+            "Province",
+            "District",
+            "Ward"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "name_site": {
+            "type": "multiple",
+            "split": ","
+        },
+        "type_site": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "ward",
+        "body": " <p style=text-align:left;><b>Total Beneficiaries Reached:</b> {{total_beneficiaries}}<br><b>Present Organisations:</b> {{acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Site Type:</b> {{type_site}}<br><b>Number of Sites:</b> {{no_sites}}<br><b>Name of Sites:</b> {{name_site}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}

@@ -1,0 +1,77 @@
+{
+    "label": "Number of Children with SAM - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 704
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "district"
+        ]
+    },
+    "type": "fill",
+    "property": "sam_mam_children",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "acronyms",
+            "name_site",
+            "type_site",
+            "province",
+            "district"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "multi",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Reporting Partners",
+            "Site Name",
+            "Site Type",
+            "Province",
+            "District"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "acronyms": {
+            "type": "multiple",
+            "split": ","
+        },
+        "name_site": {
+            "type": "multiple",
+            "split": ","
+        },
+        "type_site": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "district",
+        "body": " <p style=text-align:left;><b>Number of Children:</b> {{sam_children}}<br><b>Present Organisations:</b> {{acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Site Type:</b> {{type_site}}<br><b>Number of Sites:</b> {{no_sites}}<br><b>Name of Sites:</b> {{name_site}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
