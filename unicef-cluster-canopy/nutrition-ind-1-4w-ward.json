@@ -1,5 +1,5 @@
 {
-    "label": "Total Number of Children Screened for SAM and MAM - Ward Level",
+    "label": "Number of Children MUAC Screened: Total - Ward Level",
     "source": {
         "type": "vector",
         "data": {

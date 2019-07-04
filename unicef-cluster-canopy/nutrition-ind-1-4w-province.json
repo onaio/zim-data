@@ -1,5 +1,5 @@
 {
-    "label": "Total Number of Children Screened for SAM and MAM - Province Level",
+    "label": "Number of Children MUAC Screened: Total - Province Level",
     "source": {
         "type": "vector",
         "data": {
