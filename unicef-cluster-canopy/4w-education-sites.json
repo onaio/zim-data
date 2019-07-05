@@ -1,0 +1,103 @@
+{
+    "label": "4w Education Facilities",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 759
+        },
+        "layer": "4w_education_zim_schools-2is7ua",
+        "url": "mapbox://ona.dnad9rxv",
+        "join": [
+            "school_join",
+            "school_join"
+        ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
+    "type": "circle",
+    "radius-range": [
+        "15",
+        "15",
+        "15",
+        "15",
+        "15"
+    ],
+    "property": "reached_number",
+    "categories": {
+        "breaks": "yes",
+        "color": "Purples",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+       "filter": [
+        "partner_acronyms",
+        "school_name",
+        "type_education",
+        "unit_type",
+        "province_type",
+        "district_type",
+        "ward_type"
+    ],
+    "accepted-filter-values": [
+        "multi",
+        "multi",
+        "multi",
+        "multi",
+        "multi",
+        "multi",
+        "multi"
+    ],
+    "filter-label": [
+        "Implementing Partners",
+        "School Name",
+        "Education Type",
+        "Unit Type",
+        "Province",
+        "District",
+        "Ward"
+    ],
+    "filter-type": [
+        "vBool",
+        "vBool",
+        "vBool",
+        "vBool",
+        "vBool",
+        "vBool",
+        "vBool"
+    ]
+},
+"data-parse": {
+    "partner_acronyms": {
+        "type": "multiple",
+        "split": ","
+    },
+    "school_name": {
+        "type": "multiple",
+        "split": ","
+    },
+    "type_education": {
+        "type": "multiple",
+        "split": ","
+    },
+    "unit_type": {
+        "type": "multiple",
+        "split": ","
+    }
+},
+"popup": {
+    "header": "school_name",
+    "body": " <p style=text-align:left;><b>People Reached:</b> {{reached_number}}<br><b>Present Organisations:</b> {{partner_acronyms}}<br><b>Number of Organisations:</b> {{no_acronyms}}<br><b>Unit Type:</b> {{unit_type}}<br><b>Number of Units:</b> {{number_units}}</p>"
+},
+    "visible": false,
+    "credit": "Cluster"
+}

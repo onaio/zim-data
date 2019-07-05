@@ -1,0 +1,83 @@
+{
+    "label": "4w Nutrition Facilities",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 788
+        },
+        "layer": "4w_facility_list_nutrition-84ou12",
+        "url": "mapbox://ona.5b4d4x49",
+        "join": [
+            "facility_name",
+            "facility_name"
+        ]
+    },
+    "location": {
+        "zoom": 7.6,
+        "center": {
+            "lng": 32.1,
+            "lat": -19.8
+        }
+    },
+    "type": "circle",
+    "radius-range": [
+        "15",
+        "15",
+        "15",
+        "15",
+        "15"
+    ],
+    "property": "iyfc_reached",
+    "categories": {
+        "breaks": "yes",
+        "color": "PuBuGn",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "province_type",
+            "district_type",
+            "facility_name"
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "all"
+        ],
+        "filter-label": [
+            "Province",
+            "District",
+            "Facility Name"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "province_type": {
+            "type": "multiple",
+            "split": ","
+        },
+        "district_type": {
+            "type": "multiple",
+            "split": ","
+        },
+        "type_education": {
+            "type": "multiple",
+            "split": ","
+        }
+    },
+    "popup": {
+        "header": "facility_name",
+        "body": " <p style=text-align:left;><b>Children 6- 59 months admitted for MAM treatment:</b> {{treated_mam}}<br><b>Children 6-59 months admitted for SAM treatment:</b> {{treated_sam}}<br><b>Primary Caregivers of Children 0-23 Months who Received IYCF Counselling (Std)</b> {{iyfc_reached}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
