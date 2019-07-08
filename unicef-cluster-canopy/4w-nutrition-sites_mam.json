@@ -1,5 +1,5 @@
 {
-    "label": "SAM",
+    "label": "MAM",
     "source": {
         "type": "vector",
         "data": {
@@ -21,7 +21,7 @@
         }
     },
     "type": "circle",
-    "property": "treated_sam",
+    "property": "treated_mam",
     "categories": {
         "breaks": "yes",
         "color": "PuBuGn",
@@ -69,7 +69,7 @@
     },
     "popup": {
         "header": "facility_name",
-        "body": " <p style=text-align:left;><b>Children 6-59 months admitted for SAM treatment:</b> {{treated_sam}}</p>"
+        "body": " <p style=text-align:left;><b>Children 6- 59 months admitted for MAM treatment:</b> {{treated_mam}}"
     },
     "visible": false,
     "credit": "Cluster"
