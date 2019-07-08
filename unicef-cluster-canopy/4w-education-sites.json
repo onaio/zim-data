@@ -21,13 +21,6 @@
         }
     },
     "type": "circle",
-    "radius-range": [
-        "15",
-        "15",
-        "15",
-        "15",
-        "15"
-    ],
     "property": "reached_number",
     "categories": {
         "breaks": "yes",
