@@ -39,9 +39,11 @@
         "unit_type",
         "province_type",
         "district_type",
-        "ward_type"
+        "ward_type",
+        "statuses"
     ],
     "accepted-filter-values": [
+        "multi",
         "multi",
         "multi",
         "multi",
@@ -57,9 +59,11 @@
         "Unit Type",
         "Province",
         "District",
-        "Ward"
+        "Ward",
+        "Status"
     ],
     "filter-type": [
+        "vBool",
         "vBool",
         "vBool",
         "vBool",
@@ -83,6 +87,10 @@
         "split": ","
     },
     "unit_type": {
+        "type": "multiple",
+        "split": ","
+    },
+    "statuses": {
         "type": "multiple",
         "split": ","
     }
