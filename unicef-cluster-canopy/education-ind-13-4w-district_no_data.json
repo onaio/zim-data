@@ -30,23 +30,27 @@
             "name_school",
             "unit_type",
             "province",
-            "district"
+            "district",
+            "statuses"
         ],
         "accepted-filter-values": [
             "multi",
             "multi",
             "multi",
             "all",
-            "all"
+            "all",
+            "multi"
         ],
         "filter-label": [
             "Implementing Partners",
             "School Name",
             "Unit Type",
             "Province",
-            "District"
+            "District",
+            "Status"
         ],
         "filter-type": [
+            "vBool",
             "vBool",
             "vBool",
             "vBool",
@@ -64,6 +68,10 @@
             "split": ","
         },
         "unit_type": {
+            "type": "multiple",
+            "split": ","
+        },
+        "statuses": {
             "type": "multiple",
             "split": ","
         }

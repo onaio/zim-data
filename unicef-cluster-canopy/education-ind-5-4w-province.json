@@ -29,21 +29,25 @@
             "partner_acronyms",
             "name_school",
             "unit_type",
-            "province"
+            "province",
+            "statuses"
         ],
         "accepted-filter-values": [
             "multi",
             "multi",
             "multi",
-            "all"
+            "all",
+            "multi"
         ],
         "filter-label": [
             "Implementing Partners",
             "School Name",
             "Unit Type",
-            "Province"
+            "Province",
+            "Status"
         ],
         "filter-type": [
+            "vBool",
             "vBool",
             "vBool",
             "vBool",
@@ -60,6 +64,10 @@
             "split": ","
         },
         "unit_type": {
+            "type": "multiple",
+            "split": ","
+        },
+        "statuses": {
             "type": "multiple",
             "split": ","
         }
