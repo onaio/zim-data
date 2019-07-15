@@ -1,0 +1,51 @@
+{
+    "label": "Number of People Infected with Dysentery - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 813
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "district_pcode"
+        ]
+    },
+    "type": "fill",
+    "property": "infected_dysentery",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
+        "filter": [
+            "province",
+            "district"
+        ],
+        "accepted-filter-values": [
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Province",
+            "District"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "district",
+        "body": " <p style=text-align:left;><b>Number of Infected People:</b> {{infected_dysentery}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
