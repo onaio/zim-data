@@ -1,5 +1,5 @@
 {
-    "label": "Malaria Cases Reported for Children under 5 years - District Level",
+    "label": "Malaria Cases Reported for Children over 5 years - District Level",
     "source": {
         "type": "vector",
         "data": {
@@ -14,7 +14,7 @@
         ]
     },
     "type": "fill",
-    "property": "u5_children_malaria",
+    "property": "o5_children_malaria",
     "categories": {
         "breaks": "yes",
         "color": "Greens",
@@ -44,7 +44,7 @@
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Number of Children Infected:</b> {{u5_children_malaria}}</p>"
+        "body": " <p style=text-align:left;><b>Number of Children Infected:</b> {{o5_children_malaria}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

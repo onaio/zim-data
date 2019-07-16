@@ -1,5 +1,5 @@
 {
-    "label": "Number of People Infected with Dysentery - Province Level",
+    "label": "Dysentery Cases Reported - Province Level",
     "source": {
         "type": "vector",
         "data": {
