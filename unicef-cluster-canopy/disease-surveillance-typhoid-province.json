@@ -1,5 +1,5 @@
 {
-    "label": "Number of People Infected with Typhoid - Province Level",
+    "label": "Typhoid Cases Reported - Province Level",
     "source": {
         "type": "vector",
         "data": {

@@ -1,5 +1,5 @@
 {
-    "label": "Number of People Infected with Typhoid - District Level",
+    "label": "Typhoid Cases Reported - District Level",
     "source": {
         "type": "vector",
         "data": {

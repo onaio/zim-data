@@ -1,5 +1,5 @@
 {
-    "label": "Number of People Infected with Dysentery - District Level",
+    "label": "Dysentery Cases Reported - District Level",
     "source": {
         "type": "vector",
         "data": {

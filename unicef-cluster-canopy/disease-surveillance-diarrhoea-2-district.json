@@ -1,11 +1,11 @@
 {
-    "label": "Cholera Cases Reported - District Level",
-    "source": {
-        "type": "vector",
-        "data": {
-            "type": "superset",
-            "slice-id": 813
-        },
+    "label": "Diarrhoea Cases Reported for Children over 5 years - District Level",
+   "source": {
+    "type": "vector",
+    "data": {
+        "type": "superset",
+        "slice-id": 813
+    },
     "layer": "zwe_adm2_district",
     "url": "mapbox://ona.62o31uy4",
     "join": [
@@ -14,7 +14,7 @@
     ]
 },
 "type": "fill",
-"property": "infected_cholera",
+"property": "o5_children_diarrhoea",
 "categories": {
     "breaks": "yes",
     "color": "Greens",
@@ -44,8 +44,8 @@
 },
 "popup": {
     "header": "district",
-        "body": " <p style=text-align:left;><b>Number of Infected People:</b> {{infected_cholera}}</p>"
-    },
-    "visible": false,
-    "credit": "Cluster"
+    "body": " <p style=text-align:left;><b>Number of Children Infected:</b> {{o5_children_diarrhoea}}</p>"
+},
+"visible": false,
+"credit": "Cluster"
 }
