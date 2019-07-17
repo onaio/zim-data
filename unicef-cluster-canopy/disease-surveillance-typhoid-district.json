@@ -17,7 +17,7 @@
     "property": "infected_typhoid",
     "categories": {
         "breaks": "yes",
-        "color": "Greens",
+        "color": "Oranges",
         "clusters": 5
     },
     "aggregate": {

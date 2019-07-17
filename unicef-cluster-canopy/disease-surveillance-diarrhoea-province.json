@@ -1,5 +1,5 @@
 {
-    "label": "Diarrhoea Cases Reported for Children under 5 years - Province Level",
+    "label": "Diarrhoea Cases Reported < 5 years - Province Level",
    "source": {
     "type": "vector",
     "data": {
@@ -17,7 +17,7 @@
 "property": "u5_children_diarrhoea",
 "categories": {
     "breaks": "yes",
-    "color": "Greens",
+    "color": "Oranges",
     "clusters": 5
 },
 "aggregate": {
