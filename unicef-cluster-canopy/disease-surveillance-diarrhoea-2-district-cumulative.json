@@ -21,6 +21,10 @@
     "clusters": 5
 },
 "aggregate": {
+    "timeseries": {
+        "type": "cumulative",
+        "field": "update_date"
+    },
     "filter": [
         "province",
         "district"
@@ -36,18 +40,7 @@
     "filter-type": [
         "vBool",
         "vBool"
-    ],
-    "customAggregation": true,
-    "type": "sum",
-    "group-by": "district",
-    "date-by": "update_date",
-    "extraProps": [
-        "o5_children_diarrhoea"
-    ],
-    "timeseries": {
-        "type": "cumulative",
-        "field": "period"
-    }
+    ]
 },
 "popup": {
     "header": "district",

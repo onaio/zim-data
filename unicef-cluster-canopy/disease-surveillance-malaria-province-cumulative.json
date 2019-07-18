@@ -21,6 +21,10 @@
         "clusters": 5
     },
     "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "update_date"
+        },
         "filter": [
             "province"
         ],
@@ -32,18 +36,7 @@
         ],
         "filter-type": [
             "vBool"
-        ],
-        "customAggregation": true,
-        "type": "sum",
-        "group-by": "province",
-        "date-by": "update_date",
-        "extraProps": [
-            "u5_children_malaria"
-        ],
-        "timeseries": {
-            "type": "cumulative",
-            "field": "period"
-        }
+        ]
     },
     "popup": {
         "header": "province",
