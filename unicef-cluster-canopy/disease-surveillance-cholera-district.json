@@ -44,7 +44,7 @@
 },
 "popup": {
     "header": "district",
-        "body": " <p style=text-align:left;><b>Number of Infected People:</b> {{infected_cholera}}</p>"
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{infected_cholera}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

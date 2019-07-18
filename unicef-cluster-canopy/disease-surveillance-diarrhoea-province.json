@@ -40,7 +40,7 @@
 },
 "popup": {
     "header": "province",
-    "body": " <p style=text-align:left;><b>Number of Infected Children:</b> {{u5_children_diarrhoea}}</p>"
+    "body": " <p style=text-align:left;><b>Cases Reported:</b> {{u5_children_diarrhoea}}</p>"
 },
 "visible": false,
 "credit": "Cluster"
