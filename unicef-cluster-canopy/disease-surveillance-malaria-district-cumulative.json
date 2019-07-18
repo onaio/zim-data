@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 813
+            "slice-id": 845
         },
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
@@ -51,7 +51,7 @@
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Number of Children Infected:</b> {{u5_children_malaria}}</p>"
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{u5_children_malaria}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

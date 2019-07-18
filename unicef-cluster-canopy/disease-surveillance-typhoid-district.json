@@ -44,7 +44,7 @@
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Number of Infected People:</b> {{infected_typhoid}}</p>"
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{infected_typhoid}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

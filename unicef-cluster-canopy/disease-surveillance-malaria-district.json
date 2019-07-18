@@ -44,7 +44,7 @@
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Number of Children Infected:</b> {{u5_children_malaria}}</p>"
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{u5_children_malaria}}</p>"
     },
     "visible": false,
     "credit": "Cluster"

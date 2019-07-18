@@ -44,7 +44,7 @@
 },
 "popup": {
     "header": "district",
-    "body": " <p style=text-align:left;><b>Number of Children Infected:</b> {{o5_children_diarrhoea}}</p>"
+    "body": " <p style=text-align:left;><b>Cases Reported:</b> {{o5_children_diarrhoea}}</p>"
 },
 "visible": false,
 "credit": "Cluster"
