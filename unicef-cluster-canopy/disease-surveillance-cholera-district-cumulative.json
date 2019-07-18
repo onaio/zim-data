@@ -1,0 +1,58 @@
+{
+    "label": "Cholera Cases Reported - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 813
+        },
+    "layer": "zwe_adm2_district",
+    "url": "mapbox://ona.62o31uy4",
+    "join": [
+        "ADM2_PCODE",
+        "district_pcode"
+    ]
+},
+"type": "fill",
+"property": "infected_cholera",
+"categories": {
+    "breaks": "yes",
+    "color": "Oranges",
+    "clusters": 5
+},
+"aggregate": {
+    "filter": [
+        "province",
+        "district"
+    ],
+    "accepted-filter-values": [
+        "all",
+        "all"
+    ],
+    "filter-label": [
+        "Province",
+        "District"
+    ],
+    "filter-type": [
+        "vBool",
+        "vBool"
+    ],
+    "customAggregation": true,
+    "type": "sum",
+    "group-by": "district",
+    "date-by": "update_date",
+    "extraProps": [
+        "infected_cholera"
+    ],
+    "timeseries": {
+        "type": "cumulative",
+        "field": "period"
+    }
+},
+"popup": {
+    "header": "district",
+        "body": " <p style=text-align:left;><b>Number of Infected People:</b> {{infected_cholera}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
