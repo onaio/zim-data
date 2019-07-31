@@ -1,26 +1,26 @@
 {
-    "label": "Integrated Food Security Phase Classification projection June - September 2019",
-    "source": {
-      "type": "vector",
-      "data": "data/foodsecurity.csv",
-      "layer": "V2",
-      "url": "mapbox://ona.b7ycz24a",
-      "join": ["ADM2_EN", "NAME"]
-    },
-    "type": "fill",
-    "property": "IPC",
-    "categories": {
-      "breaks": "no",
-      "limit": ["1", "2", "3", "4","5"],
-      "color": ["#F0F8FF", "#FFFF00", "#fd8d3c", "#DC143C","#800000"],
-      "label": ["Minimal", "Stressed", "Crisis", "Emergency","Famine"]
-    },
-    "aggregate": {
-      "timeseries": {
-        "field": "period"
-      }
-    },
- 
-    "visible": false,
-    "credit": "FEWS NET "
-  }
+  "label": "Integrated Food Security Phase Classification projection June - September 2019",
+  "source": {
+    "type": "vector",
+    "data": "data/foodsecurity.csv",
+    "layer": "V2",
+    "url": "mapbox://ona.b7ycz24a",
+    "join": ["ADM2_EN", "NAME"]
+  },
+  "type": "fill",
+  "property": "IPC",
+  "categories": {
+    "breaks": "no",
+    "limit": ["1", "2", "3", "4","5"],
+    "color": ["#DCF0DC", "#FAE61E", "#E67800", "#C80000","#640000"],
+    "label": ["Minimal", "Stressed", "Crisis", "Emergency","Famine"]
+  },
+  "aggregate": {
+    "timeseries": {
+      "field": "period"
+    }
+  },
+
+  "visible": false,
+  "credit": "FEWS NET "
+}
