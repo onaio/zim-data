@@ -23,7 +23,7 @@
 "aggregate": {
     "timeseries": {
         "type": "cumulative",
-        "field": "update_date"
+        "field": "week_date"
     },
     "filter": [
         "province"
