@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 788
+            "slice-id": 1267
         },
         "layer": "4w_facility_list_nutrition-84ou12",
         "url": "mapbox://ona.5b4d4x49",
@@ -30,7 +30,7 @@
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
-            "field": "update_date"
+            "field": "week_date"
         },
         "filter": [
             "province_type",
