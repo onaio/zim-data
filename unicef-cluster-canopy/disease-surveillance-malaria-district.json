@@ -21,6 +21,7 @@
         "clusters": 5
     },
     "aggregate": {
+        "no-sort": true,
         "timeseries": {
             "type": "cumulative",
             "field": "week_date"
