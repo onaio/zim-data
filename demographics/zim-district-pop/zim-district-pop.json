@@ -3,8 +3,8 @@
   "source": {
     "type": "vector",
     "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-district-pop/Zimbabwe_Population_Data_district.csv",
-    "layer": "zwe_adm2_district",
-    "url": "mapbox://ona.62o31uy4",
+    "layer": "full_ward_name_new",
+    "url": "mapbox://ona.a39a9kz8",
     "join": ["ADM2_PCODE", "pcode_admin2"]
   },
   "id": "zim-district-pop",
