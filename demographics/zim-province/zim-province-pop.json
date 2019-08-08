@@ -5,19 +5,19 @@
     "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-province/Zimbabwe%20Population%20Data%20-%20province.csv",
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
-    "join": ["ADM1_EN", "Names"]
+    "join": ["ADM1_PCODE", "pcode_admin1"]
   },
   "id": "zim-province-pop",
   "type": "fill",
-  "property": "Populations",
+  "property": "Total_Pop_2012",
   "categories": {
     "breaks": "yes",
     "color": "Blues",
     "clusters": 5
   },
   "popup": {
-    "header": "Names",
-    "body": "<p style=text-align:left;> <b>Population:</b> {{Populations}}</p>"
+    "header": "Admin_1",
+    "body": "<p style=text-align:left;> <b>Total Population:</b> {{Total_Pop_2012}}<br>Male Population:</b> {{POP_Males_2012}}<br>Female Population:</b> {{Pop_FEMALE_2012}}</p>"
   },
   "visible": false,
   "credit": " "

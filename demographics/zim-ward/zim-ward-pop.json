@@ -1,13 +1,13 @@
 {
-  "label": "District Population",
+  "label": "Province Population",
   "source": {
     "type": "vector",
-    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-district-pop/Zimbabwe_Population_Data_district.csv",
-    "layer": "zwe_adm2_district",
-    "url": "mapbox://ona.62o31uy4",
-    "join": ["ADM2_PCODE", "pcode_admin2"]
+    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-province/Zimbabwe%20Population%20Data%20-%20ward.csv",
+    "layer": "full_ward_name_new",
+    "url": "mapbox://ona.a39a9kz8",
+    "join": ["ADM3_PCODE", "pcode_admin3"]
   },
-  "id": "zim-district-pop",
+  "id": "zim-province-pop",
   "type": "fill",
   "property": "Total_Pop_2012",
   "categories": {
@@ -16,7 +16,7 @@
     "clusters": 5
   },
   "popup": {
-    "header": "Admin_2",
+    "header": "Admin_3",
     "body": "<p style=text-align:left;> <b>Total Population:</b> {{Total_Pop_2012}}<br>Male Population:</b> {{POP_Males_2012}}<br>Female Population:</b> {{Pop_FEMALE_2012}}</p>"
   },
   "visible": false,
