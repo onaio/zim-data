@@ -5,7 +5,7 @@
     "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-district-pop/Zimbabwe_Population_Data_district.csv",
     "layer": "full_ward_name_new",
     "url": "mapbox://ona.a39a9kz8",
-    "join": ["ADM2_PCODE", "pcode_admin2"]
+    "join": ["ADM2_EN", "Admin_2"]
   },
   "id": "zim-district-pop",
   "type": "fill",

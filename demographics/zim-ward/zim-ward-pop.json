@@ -1,11 +1,11 @@
 {
-  "label": "Province Population",
+  "label": "Ward Population",
   "source": {
     "type": "vector",
     "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-ward/Zimbabwe%20Population%20Data%20-%20ward.csv",
     "layer": "full_ward_name_new",
     "url": "mapbox://ona.a39a9kz8",
-    "join": ["ADM3_PCODE", "pcode_admin3"]
+    "join": ["ward_name", "Admin_3"]
   },
   "id": "zim-province-pop",
   "type": "fill",
