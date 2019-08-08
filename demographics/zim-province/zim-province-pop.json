@@ -3,8 +3,8 @@
   "source": {
     "type": "vector",
     "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-province/Zimbabwe%20Population%20Data%20-%20province.csv",
-    "layer": "zwe_adm1_province",
-    "url": "mapbox://ona.9h0dpqlh",
+    "layer": "full_ward_name_new",
+    "url": "mapbox://ona.a39a9kz8",
     "join": ["ADM1_PCODE", "pcode_admin1"]
   },
   "id": "zim-province-pop",
