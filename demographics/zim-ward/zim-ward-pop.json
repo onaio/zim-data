@@ -17,7 +17,7 @@
   },
   "popup": {
     "header": "Admin_3",
-    "body": "<p style=text-align:left;> <b>Total Population:</b> {{Total_Pop_2012}}<br>Male Population:</b> {{POP_Males_2012}}<br>Female Population:</b> {{Pop_FEMALE_2012}}</p>"
+    "body": "<p style=text-align:left;><b>Total Population:</b> {{Total_Pop_2012}}<br><b>Male Population:</b> {{POP_Males_2012}}<br><b>Female Population:</b> {{Pop_FEMALE_2012}}</p>"
   },
   "visible": false,
   "credit": " "
