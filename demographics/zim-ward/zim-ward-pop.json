@@ -2,7 +2,7 @@
   "label": "Ward Population",
   "source": {
     "type": "vector",
-    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-ward/Zimbabwe%20Population%20Data%20-%20ward.csv",
+    "data": "https://raw.githubusercontent.com/onaio/zim-data/master/demographics/zim-ward/Zimbabwe_Population_Data_ward.csv",
     "layer": "full_ward_name_new",
     "url": "mapbox://ona.a39a9kz8",
     "join": ["ward_name", "Admin_3"]
