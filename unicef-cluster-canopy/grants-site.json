@@ -1,0 +1,56 @@
+{
+    "label": "School Improvement Grant - Site Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 1286
+        },
+        "layer": "school_grants-1a5b8y",
+        "url": "mapbox://ona.6hep8m3e",
+        "join": [
+            "school_number",
+            "school_number"
+        ]
+    },
+    "type": "circle",
+    "icon-allow-overlap": false,
+    "property": "allocation",
+    "categories": {
+        "breaks": "yes",
+        "color": "PuRd",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "year_id"
+        },
+        "filter": [
+            "province",
+            "district",
+            "name"
+        ],
+        "accepted-filter-values": [
+            "all",
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Province",
+            "District",
+            "School"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "name",
+        "body": " <p style=text-align:left;><b>Average Income:</b> {{avg_income}}<br><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
