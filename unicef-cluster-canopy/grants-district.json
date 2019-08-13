@@ -1,0 +1,51 @@
+{
+    "label": "School Improvement Grant  - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 1280
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "district"
+        ]
+    },
+    "type": "fill",
+    "property": "allocation",
+    "categories": {
+        "breaks": "yes",
+        "color": "PuRd",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "year_id"
+        },
+        "filter": [
+            "province",
+            "district"
+        ],
+        "accepted-filter-values": [
+            "all",
+            "all"
+        ],
+        "filter-label": [
+            "Province",
+            "District"
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "district",
+        "body": " <p style=text-align:left;><b>Average Income:</b> {{avg_incom}}<br><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
