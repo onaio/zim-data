@@ -4,16 +4,17 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 1284
+            "slice-id": 1286
         },
         "layer": "school_grants-1a5b8y",
         "url": "mapbox://ona.6hep8m3e",
         "join": [
-            "name",
-            "name"
+            "school_number",
+            "school_number"
         ]
     },
-    "type": "fill",
+    "type": "circle",
+    "icon-allow-overlap": false,
     "property": "allocation",
     "categories": {
         "breaks": "yes",
@@ -48,7 +49,7 @@
     },
     "popup": {
         "header": "name",
-        "body": " <p style=text-align:left;><b>Average Income:</b> {{avg_incom}}<br><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}</p>"
+        "body": " <p style=text-align:left;><b>Average Income:</b> {{avg_income}}<br><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
