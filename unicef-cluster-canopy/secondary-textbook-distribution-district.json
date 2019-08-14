@@ -1,0 +1,175 @@
+{
+    "label": "Secondary School Textbook Distribution - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 1293
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "district"
+        ]
+    },
+    "type": "fill",
+    "property": "enrolment_total",
+    "categories": {
+        "breaks": "yes",
+        "color": "Purples",
+        "clusters": 5
+    },
+    "aggregate": {
+        "filter": [
+            "district"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "District"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "detail-view": {
+        "UID": "district",
+        "title": {
+            "prop": "district",
+            "mustache": "{{{district}}}"
+        },
+        "sub-title": {
+            "prop": "district",
+            "mustache": "{{{district}}}"
+        },
+        "basic-info": [
+            {
+                "value": "district",
+                "icon": {
+                    "FA": "bookmark"
+                },
+                "alt": "District"
+            },
+            {
+                "value": {
+                    "prop": "enrolment_form_1",
+                    "mustache": "{{{enrolment_form_1}}}"
+                },
+                "alt": "Form 1 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_form_2",
+                    "mustache": "{{{enrolment_form_2}}}"
+                },
+                "alt": "Form 2 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_form_3",
+                    "mustache": "{{{enrolment_form_3}}}"
+                },
+                "alt": "Form 3 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_form_4",
+                    "mustache": "{{{enrolment_form_4}}}"
+                },
+                "alt": "Form 4 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_total",
+                    "mustache": "{{{enrolment_total}}}"
+                },
+                "alt": "Total Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_1_agriculture",
+                    "mustache": "{{{form_1_agriculture}}}"
+                },
+                "alt": "Form 1 Agriculture Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_2_agriculture",
+                    "mustache": "{{{form_2_agriculture}}}"
+                },
+                "alt": "Form 2 Agriculture Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_2_pe_sport_md",
+                    "mustache": "{{{form_2_pe_sport_md}}}"
+                },
+                "alt": "Form 2 Physical Education,Sport and Mass Displays Learners Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_2_comb_sc",
+                    "mustache": "{{{form_2_comb_sc}}}"
+                },
+                "alt": "Form 2 General/Combined Science Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_3_agriculture",
+                    "mustache": "{{{form_3_agriculture}}}"
+                },
+                "alt": "Form 3 Agriculture Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_3_pe_sport_md",
+                    "mustache": "{{{form_3_pe_sport_md}}}"
+                },
+                "alt": "Form 3 Physical Education,Sport and Mass Displays Learners Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_4_agriculture",
+                    "mustache": "{{{form_4_agriculture}}}"
+                },
+                "alt": "Form 4 Agriculture Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_4_pe_sport_md",
+                    "mustache": "{{{form_4_pe_sport_md}}}"
+                },
+                "alt": "Form 4 Physical Education,Sport and Mass Displays Learners Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "form_4_comb_sc",
+                    "mustache": "{{{form_4_comb_sc}}}"
+                },
+                "alt": "Form 4 General/Combined Science Learner's Book",
+                "useAltAsPrefix": true
+            }
+        ]
+    },
+    "popup": {
+        "header": "district",
+        "body": "<p style=text-align:left;><b>Click on District for More Information</b></p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}

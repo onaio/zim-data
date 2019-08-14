@@ -1,0 +1,223 @@
+{
+    "label": "Priimary School Improvement Grant  - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 1292
+        },
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_EN",
+            "district"
+        ]
+    },
+    "type": "fill",
+    "property": "total_enrolment",
+    "categories": {
+        "breaks": "yes",
+        "color": "Purples",
+        "clusters": 5
+    },
+    "aggregate": {
+        "filter": [
+            "district"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "District"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "detail-view": {
+        "UID": "district",
+        "title": {
+            "prop": "district",
+            "mustache": "{{{district}}}"
+        },
+        "sub-title": {
+            "prop": "district",
+            "mustache": "{{{district}}}"
+        },
+        "basic-info": [
+            {
+                "value": "district",
+                "icon": {
+                    "FA": "bookmark"
+                },
+                "alt": "District"
+            },
+            {
+                "value": {
+                    "prop": "ecd_b_enrollment",
+                    "mustache": "{{{ecd_b_enrollment}}}"
+                },
+                "alt": "ECD B Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_grade_1",
+                    "mustache": "{{{enrolment_grade_1}}}"
+                },
+                "alt": "Grade 1 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_grade_2",
+                    "mustache": "{{{enrolment_grade_2}}}"
+                },
+                "alt": "Grade 2 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_grade_3",
+                    "mustache": "{{{enrolment_grade_3}}}"
+                },
+                "alt": "Grade 3 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "enrolment_grade_4",
+                    "mustache": "{{{enrolment_grade_4}}}"
+                },
+                "alt": "Grade 4 Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "total_enrolment",
+                    "mustache": "{{{total_enrolment}}}"
+                },
+                "alt": "Total Enrolment",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "ecd_b_ict",
+                    "mustache": "{{{ecd_b_ict}}}"
+                },
+                "alt": "ECD B Information and Communication Technology Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "ecd_b_md",
+                    "mustache": "{{{ecd_b_md}}}"
+                },
+                "alt": "ECD Mass Displays Learner's Book ",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "ecd_b_pe",
+                    "mustache": "{{{ecd_b_pe}}}"
+                },
+                "alt": "ECD Physical Education Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "ecd_b_vpa",
+                    "mustache": "{{{ecd_b_vpa}}}"
+                },
+                "alt": "ECD Visual and Performing Arts Learner's Domnic",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "ecd_b_math",
+                    "mustache": "{{{ecd_b_math}}}"
+                },
+                "alt": "ECD Mathematics and Science Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_1_pe_sport_md",
+                    "mustache": "{{{grade_1_pe_sport_md}}}"
+                },
+                "alt": "Grade 1 Physical Education, Sport and Mass Displays Learner's Copy",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_2_ict",
+                    "mustache": "{{{grade_2_ict}}}"
+                },
+                "alt": "Grade 2 Information and Communication Technology Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_2_pe",
+                    "mustache": "{{{grade_2_pe}}}"
+                },
+                "alt": "Grade 2 Physical Education Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_2_math_sc",
+                    "mustache": "{{{grade_2_math_sc}}}"
+                },
+                "alt": "Grade 2 Mathematics and Science Learner's Guide",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_3_pe_sport_md",
+                    "mustache": "{{{grade_3_pe_sport_md}}}"
+                },
+                "alt": "Grade 3 Physical Education, Sport and Mass Displays Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_4_agriculture",
+                    "mustache": "{{{grade_4_agriculture}}}"
+                },
+                "alt": "Grade 4 Agriculture Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_4_ict",
+                    "mustache": "{{{grade_4_ict}}}"
+                },
+                "alt": "Grade 4 Information Communication Technology Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_4_frm",
+                    "mustache": "{{{grade_4_frm}}}"
+                },
+                "alt": "Grade 4 Family, Religion and Moral  Education Learner's Book",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "grade_4_sc_tech",
+                    "mustache": "{{{grade_4_sc_tech}}}"
+                },
+                "alt": "Grade 4 Science and Technology Learner's Book",
+                "useAltAsPrefix": true
+            }
+        ]
+    },
+    "popup": {
+        "header": "district",
+        "body": "<p style=text-align:left;><b>Click on District for More Information</b></p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
