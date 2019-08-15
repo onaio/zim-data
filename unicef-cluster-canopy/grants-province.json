@@ -40,7 +40,7 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}<br><b>Average Income:</b> {{avg_income}}</p>"
+        "body": " <p style=text-align:left;><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}<br><b>Male Enrolment:</b> {{male_enrolment}}<br><b>Female Enrolment:</b> {{female_enrolment}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
