@@ -49,7 +49,7 @@
     },
     "popup": {
         "header": "name",
-        "body": " <p style=text-align:left;><b>Average Income:</b> {{avg_income}}<br><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}</p>"
+        "body": " <p style=text-align:left;><b>Allocation:</b> {{allocation}}<br><b>Total Enrolment:</b> {{total_enrolment}}<br><b>Average Income:</b> {{avg_income}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
