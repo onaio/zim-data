@@ -17,7 +17,7 @@
     "property": "reached_total",
     "categories": {
         "breaks": "yes",
-        "color": "Greens",
+        "color": "Reds",
         "clusters": 5
     },
     "aggregate": {

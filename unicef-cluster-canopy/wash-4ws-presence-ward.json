@@ -24,7 +24,7 @@
     "property": "no_acronyms",
     "categories": {
         "breaks": "yes",
-        "color": "Greens",
+        "color": "PuBu",
         "clusters": 5
     },
     "aggregate": {

@@ -24,7 +24,7 @@
     "property": "reached_people",
     "categories": {
         "breaks": "yes",
-        "color": "Greens",
+        "color": "PuBu",
         "clusters": 5
     },
     "aggregate": {
