@@ -17,7 +17,7 @@
     "property": "unicef_results_agg",
     "categories": {
         "breaks": "yes",
-        "color": "Oranges",
+        "color": "GnBu",
         "clusters": 5
     },
     "aggregate": {

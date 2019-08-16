@@ -24,7 +24,7 @@
     "property": "reached_number",
     "categories": {
         "breaks": "yes",
-        "color": "Greens",
+        "color": "RdPu",
         "clusters": 5
     },
     "aggregate": {
