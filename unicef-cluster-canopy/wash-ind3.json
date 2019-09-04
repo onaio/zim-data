@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 366
+            "slice-id": 1608
         },
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
@@ -36,9 +36,9 @@
         "customAggregation": true,
         "type": "sum",
         "group-by": "location",
-        "date-by": "week",
+        "date-by": "date",
         "extraProps": [
-            "week",
+            "date",
             "unicef_results_agg"
         ],
         "timeseries": {
