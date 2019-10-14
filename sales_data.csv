@@ -1,0 +1,154 @@
+Country,country_id,monthly_submissions,users,private_projects,private_forms
+Afghanistan,AFG,2641,96,102,400
+Angola,AGO,32,4,4,11
+Albania,ALB,0,8,5,4
+United Arab Emirates,ARE,1909,5,3,6
+Argentina,ARG,715,17,14,62
+Antigua and Barbuda,ATG,0,1,0,0
+Australia,AUS,23,23,20,41
+Austria,AUT,0,6,4,6
+Burundi,BDI,4670,24,25,59
+Belgium,BEL,597,32,50,174
+Benin,BEN,336,28,25,62
+Burkina Faso,BFA,8311,105,86,289
+Bangladesh,BGD,1602,347,309,445
+Bahamas,BHS,46,2,2,1
+Bosnia and Herzegovina,BIH,0,1,0,0
+Belize,BLZ,161,3,3,17
+Bolivia,BOL,84,19,16,27
+Brazil,BRA,1563,74,73,173
+Barbados,BRB,0,1,2,4
+Bhutan,BTN,0,2,1,1
+Central African Republic,CAF,0,4,3,5
+Canada,CAN,672,48,63,125
+Switzerland,CHE,8,40,33,92
+Chile,CHL,0,4,4,2
+China,CHN,47,7,5,17
+Cote D'Ivoire,CIV,10470,69,74,173
+Cameroon,CMR,15,18,16,15
+Congo,COG,2651,69,60,150
+Colombia,COL,651,64,56,127
+Costa Rica,CRI,0,5,4,18
+Curaçao,CUW,0,1,1,0
+Czechia,CZE,0,1,1,2
+Germany,DEU,2244,75,68,209
+Djibouti,DJI,3,10,9,7
+Denmark,DNK,23,15,14,108
+Dominican Republic,DOM,0,2,2,4
+Ecuador,ECU,757,23,21,53
+Egypt,EGY,0,10,7,26
+Eritrea,ERI,0,1,1,1
+Spain,ESP,346,24,20,79
+Ethiopia,ETH,18429,72,81,176
+Finland,FIN,7,8,6,5
+Fiji,FJI,0,5,5,0
+France,FRA,1784,92,111,436
+Federated States of Micronesia,FSM,0,1,1,0
+Gabon,GAB,0,1,1,1
+United Kingdom,GBR,7279,145,159,358
+Georgia,GEO,0,1,1,2
+Ghana,GHA,4539,178,174,384
+Guinea,GIN,905,45,50,175
+Gambia,GMB,45,14,19,81
+Greece,GRC,15,11,13,13
+Guatemala,GTM,154,22,18,33
+Guyana,GUY,0,1,1,0
+Hong Kong,HKG,0,4,2,1
+Honduras,HND,0,6,4,6
+Haiti,HTI,7865,138,132,437
+Hungary,HUN,0,5,3,13
+Indonesia,IDN,17659,477,415,931
+India,IND,5771,389,300,570
+Ireland,IRL,201,10,11,21
+Iraq,IRQ,141,77,65,145
+Israel,ISR,0,4,3,2
+Italy,ITA,408,64,58,138
+Jamaica,JAM,0,14,14,26
+Jordan,JOR,2159,123,111,231
+Japan,JPN,141,15,15,36
+Kenya,KEN,12817,789,895,3239
+Kyrgyzstan,KGZ,0,8,14,82
+Cambodia,KHM,396,56,65,160
+"Korea, Republic of",KOR,0,1,1,15
+Laos,LAO,304,34,33,31
+Lebanon,LBN,5010,232,229,626
+Liberia,LBR,5,31,22,57
+Libya,LBY,0,10,10,8
+Saint Lucia,LCA,1310,1,0,0
+Sri Lanka,LKA,270,6,4,8
+Lesotho,LSO,0,5,4,4
+Republic of Lithuania,LTU,302,8,9,17
+Luxembourg,LUX,0,3,2,0
+Latvia,LVA,0,1,1,0
+Morocco,MAR,1,4,3,2
+Madagascar,MDG,0,26,28,21
+Mexico,MEX,38,21,21,41
+Marshall Islands,MHL,0,1,1,0
+Mali,MLI,420,122,109,261
+Myanmar,MMR,63,47,39,93
+Mongolia,MNG,398,5,6,16
+Mozambique,MOZ,577,53,53,111
+Mauritania,MRT,1830,18,15,39
+Mauritius,MUS,4820,24,51,321
+Malawi,MWI,404,67,67,163
+Malaysia,MYS,993,31,25,23
+Namibia,NAM,0,2,3,8
+Niger,NER,1994,57,50,77
+Nigeria,NGA,126976,396,409,1051
+Nicaragua,NIC,46,32,26,58
+Netherlands,NLD,95,40,31,38
+Norway,NOR,2,4,8,68
+Nepal,NPL,2788,113,134,363
+New Zealand,NZL,0,2,1,5
+Oman,OMN,0,1,0,0
+Pakistan,PAK,2317,67,49,205
+Panama,PAN,0,1,1,5
+Peru,PER,15,14,13,11
+Philippines,PHL,419,74,73,126
+Papua New Guinea,PNG,0,6,5,1
+Poland,POL,4,3,3,9
+Puerto Rico,PRI,0,9,8,1
+Portugal,PRT,0,7,5,12
+Paraguay,PRY,619,7,6,12
+Palestine,PSX,68,5,5,6
+French Polynesia,PYF,0,1,1,0
+Russia,RUS,1,6,5,1
+Rwanda,RWA,1076,90,81,160
+Saudi Arabia,SAU,0,1,1,2
+Sudan,SDN,0,7,5,5
+South Sudan,SDS,2230,39,39,78
+Senegal,SEN,1026,106,103,182
+Singapore,SGP,0,11,10,35
+Sierra Leone,SLE,1371,61,74,283
+El Salvador,SLV,0,8,8,20
+Somalia,SOM,1383,325,381,571
+Serbia,SRB,0,2,2,3
+Sweden,SWE,2174,12,23,87
+Eswatini,SWZ,0,6,5,12
+Seychelles,SYC,0,2,1,1
+Syria,SYR,0,9,9,1
+Turks and Caicos Islands,TCA,3,2,2,3
+Chad,TCD,1,5,5,8
+Togo,TGO,0,11,10,2
+Thailand,THA,973,87,74,120
+Tajikistan,TJK,0,6,16,28
+Trinidad and Tobago,TTO,0,2,0,0
+Tunisia,TUN,0,8,8,9
+Turkey,TUR,64,53,44,136
+Taiwan,TWN,6,5,5,6
+Tanzania,TZA,3658,106,104,237
+Uganda,UGA,27168,137,134,268
+Ukraine,UKR,303,10,7,7
+United States,USA,11704,436,459,1111
+Uzbekistan,UZB,0,5,3,6
+Vietnam,VNM,1514,127,122,418
+Yemen,YEM,995,79,83,205
+South Africa,ZAF,1755,89,113,219
+Zambia,ZMB,2567,50,40,42
+Zimbabwe,ZWE,429,60,76,158
+Timor-Leste,,455,22,19,41
+Democratic Republic of Timor-Leste,,307,35,49,168
+Lao People's Democratic Republic,,393,7,7,10
+Europe,,0,1,1,0
+Anonymous Proxy,,0,1,1,6
+French Guiana,,211,3,3,14
