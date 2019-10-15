@@ -1,5 +1,5 @@
 {
-    "label": "Cholera Cases Reported < 5 years - Province Level",
+    "label": "Cholera Cases Reported < 5 years - District Level",
     "source": {
         "type": "vector",
         "data": {
