@@ -4,7 +4,7 @@
     "type": "vector",
     "data": {
         "type": "superset",
-        "slice-id": 814
+        "slice-id": 2717
     },
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
@@ -14,7 +14,7 @@
     ]
 },
 "type": "fill",
-"property": "u5_children_diarrhoea",
+"property": "diarrhoea_below_5yrs_cases",
 "categories": {
     "breaks": "yes",
     "color": "Oranges",
@@ -41,7 +41,7 @@
 },
 "popup": {
     "header": "province",
-    "body": " <p style=text-align:left;><b>Cases Reported:</b> {{u5_children_diarrhoea}}</p>"
+    "body": " <p style=text-align:left;><b>Cases Reported:</b> {{diarrhoea_below_5yrs_cases}}</p>"
 },
 "visible": false,
 "credit": "Cluster"

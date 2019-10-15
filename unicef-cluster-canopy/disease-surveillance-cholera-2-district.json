@@ -1,11 +1,11 @@
 {
-    "label": "Diarrhoea Cases Reported > 5 years - District Level",
-   "source": {
-    "type": "vector",
-    "data": {
-        "type": "superset",
-        "slice-id": 2716
-    },
+    "label": "Cholera Cases Reported > 5 years - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 2716
+        },
     "layer": "zwe_adm2_district",
     "url": "mapbox://ona.62o31uy4",
     "join": [
@@ -14,7 +14,7 @@
     ]
 },
 "type": "fill",
-"property": "diarrhoea_above_5yrs_cases",
+"property": "cholera_above_5yrs_cases",
 "categories": {
     "breaks": "yes",
     "color": "Oranges",
@@ -45,8 +45,8 @@
 },
 "popup": {
     "header": "district",
-    "body": " <p style=text-align:left;><b>Cases Reported:</b> {{diarrhoea_above_5yrs_cases}}</p>"
-},
-"visible": false,
-"credit": "Cluster"
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{cholera_above_5yrs_cases}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
 }

@@ -1,5 +1,5 @@
 {
-    "label": "Dysentery Cases Reported < 5 years - District Level",
+    "label": "Typhoid Cases Reported > 5 years - District Level",
     "source": {
         "type": "vector",
         "data": {
@@ -14,7 +14,7 @@
         ]
     },
     "type": "fill",
-    "property": "dysentery_below_5yrs_cases",
+    "property": "typhoid_above_5yrs_cases",
     "categories": {
         "breaks": "yes",
         "color": "Oranges",
@@ -45,7 +45,7 @@
     },
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{dysentery_below_5yrs_cases}}</p>"
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{typhoid_above_5yrs_cases}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
