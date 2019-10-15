@@ -1,20 +1,20 @@
 {
-    "label": "Dysentery Cases Reported < 5 years - District Level",
+    "label": "Typhoid Cases Reported > 5 years - Province Level",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 2716
+            "slice-id": 2717
         },
-        "layer": "zwe_adm2_district",
-        "url": "mapbox://ona.62o31uy4",
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
         "join": [
-            "ADM2_PCODE",
-            "district_pcode"
+            "ADM1_PCODE",
+            "province_pcode"
         ]
     },
     "type": "fill",
-    "property": "dysentery_below_5yrs_cases",
+    "property": "typhoid_above_5yrs_cases",
     "categories": {
         "breaks": "yes",
         "color": "Oranges",
@@ -27,25 +27,21 @@
             "field": "week_date"
         },
         "filter": [
-            "province",
-            "district"
+            "province"
         ],
         "accepted-filter-values": [
-            "all",
             "all"
         ],
         "filter-label": [
-            "Province",
-            "District"
+            "Province"
         ],
         "filter-type": [
-            "vBool",
             "vBool"
         ]
     },
     "popup": {
-        "header": "district",
-        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{dysentery_below_5yrs_cases}}</p>"
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{typhoid_above_5yrs_cases}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
