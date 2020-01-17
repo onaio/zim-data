@@ -31,8 +31,8 @@
             "district"
         ],
         "accepted-filter-values": [
-            "all",
-            "all"
+            "multi",
+            "multi"
         ],
         "filter-label": [
             "Province",
@@ -42,6 +42,16 @@
             "vBool",
             "vBool"
         ]
+    },
+    "data-parse": {
+        "province": {
+            "type": "multiple",
+            "split": ","
+        },
+        "district": {
+            "type": "multiple",
+            "split": ","
+        }
     },
     "popup": {
         "header": "district",
