@@ -1,0 +1,34 @@
+{
+    "label": "% of children age 24-35 months currently vaccinated against measles-rubella (Measles coverage)",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 11483
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "rate",
+    "categories": {
+        "breaks": "yes",
+        "color": "PuRd",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "field": "period"
+        }
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Rate:</b> {{rate}}% </p>"
+    },
+    "visible": false,
+    "credit": "MICS"
+}

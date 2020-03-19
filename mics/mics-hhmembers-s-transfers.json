@@ -1,0 +1,34 @@
+{
+    "label": "% of household members living in households that received any form of social transfer and benefits in the last 3 months",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 11489
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "rate",
+    "categories": {
+        "breaks": "yes",
+        "color": "Set2",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "field": "period"
+        }
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Rate:</b> {{rate}}% </p>"
+    },
+    "visible": false,
+    "credit": "MICS"
+}
