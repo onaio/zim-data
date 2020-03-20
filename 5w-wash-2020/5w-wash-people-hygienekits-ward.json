@@ -1,0 +1,242 @@
+{
+    "label": "Number of people receiving Hygiene kits (family kit) - Ward Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 11535
+      
+    },
+    "layer": "full_ward_name_new",
+        "url": "mapbox://ona.a39a9kz8",
+        "join": [
+            "ward_name",
+            "ward"
+        ]
+    },
+    "type": "fill",
+    "property": "assisted",
+    "categories": {
+        "breaks": "yes",
+        "color": "PuBu",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "reporting_period"
+        },
+        "filter": [
+            "lead_agency",
+            "implementing_partner",
+            "org_type",
+            "delivery_modality",
+            "bene_type",
+            "status",
+            "province",
+            "district",
+            "ward"
+            
+        ],
+        "accepted-filter-values": [
+            "multi",
+            "multi",
+            "multi",
+            "multi",
+            "multi",
+            "multi",
+            "multi",
+            "multi",
+            "all"
+
+        ],
+        "filter-label": [
+            "Lead Agency",
+            "Implementing Partner",
+            "Organization Type",
+            "Delivery Modality",
+            "Beneficiary Type",
+            "Status",
+            "Province",
+            "District",
+            "Ward"
+            
+        ],
+        "filter-type": [
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool",
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "lead_agency": {
+            "type": "multiple",
+            "split": ","
+        },
+        "implementing_partner": {
+            "type": "multiple",
+            "split": ","
+        },
+        "org_type": {
+            "type": "multiple",
+            "split": ","
+        },
+        "delivery_modality": {
+            "type": "multiple",
+            "split": ","
+        },
+        "status": {
+            "type": "multiple",
+            "split": ","
+        },
+        "bene_type": {
+            "type": "multiple",
+            "split": ","
+        },
+        "province": {
+            "type": "multiple",
+            "split": ","
+        },
+        "district": {
+            "type": "multiple",
+            "split": ","
+        }
+
+    },
+    "detail-view": {
+        "UID": "province",
+        "title": {
+            "prop": "province",
+            "mustache": "{{{province}}}"
+        },
+        "sub-title": {
+            "prop": "district",
+            "mustache": "{{{district}}}"
+        },
+        "basic-info": [
+            {
+                "value": "ward",
+                "icon": {
+                    "FA": "bookmark"
+                },
+                "alt": "Ward"
+            },
+            {
+                "value": {
+                    "prop": "targeted",
+                    "mustache": "{{{targeted}}}"
+                },
+                "alt": "Targeted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "male_targeted",
+                    "mustache": "{{{male_targeted}}}"
+                },
+                "alt": "Male Targeted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "female_targeted",
+                    "mustache": "{{{female_targeted}}}"
+                },
+                "alt": "Female Targeted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "assisted",
+                    "mustache": "{{{assisted}}}"
+                },
+                "alt": "Assisted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "male_assisted",
+                    "mustache": "{{{male_assisted}}}"
+                },
+                "alt": "Male Assisted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "female_assisted",
+                    "mustache": "{{{female_targeted}}}"
+                },
+                "alt": "Female Assisted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "lead_agency",
+                    "mustache": "{{{lead_agency}}}"
+                },
+                "alt": "Lead Agency",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "implementing_partner",
+                    "mustache": "{{{implementing_partner}}}"
+                },
+                "alt": "Implementing Partner",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "org_type",
+                    "mustache": "{{{org_type}}}"
+                },
+                "alt": "Organization Type",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "delivery_modality",
+                    "mustache": "{{{delivery_modality}}}"
+                },
+                "alt": "Delivery Modality",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "bene_type",
+                    "mustache": "{{{bene_type}}}"
+                },
+                "alt": "Beneficiary Type",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "status",
+                    "mustache": "{{{status}}}"
+                },
+                "alt": "Status",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "comments",
+                    "mustache": "{{{comments}}}"
+                },
+                "alt": "Comments",
+                "useAltAsPrefix": true
+            }
+        ]
+    },
+    "popup": {
+        "header": "ward",
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{assisted}}<br><b>Present Lead Agencies:</b> {{no_agencies}}<br><b>Number of Implementing Partners:</b> {{no_ips}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
