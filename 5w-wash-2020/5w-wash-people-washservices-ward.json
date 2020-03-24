@@ -18,7 +18,7 @@
 "property": "assisted",
 "categories": {
     "breaks": "yes",
-    "color": "PuBu",
+    "color": "RdYlGn",
     "clusters": 5
 },
 "aggregate": {

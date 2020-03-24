@@ -17,7 +17,7 @@
     "property": "women",
     "categories": {
         "breaks": "yes",
-        "color": "Reds",
+        "color": "RdYlGn",
         "clusters": 5
     },
     "aggregate": {
