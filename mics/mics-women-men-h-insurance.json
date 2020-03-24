@@ -17,7 +17,7 @@
     "property": "men",
     "categories": {
         "breaks": "yes",
-        "color": "Set2",
+        "color": "RdYlGn",
         "clusters": 5
     },
     "aggregate": {
