@@ -21,6 +21,7 @@
         "color": "RdYlGn",
         "clusters": 5
     },
+    "showZeros": true,
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
