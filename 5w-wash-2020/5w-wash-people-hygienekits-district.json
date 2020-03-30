@@ -21,11 +21,11 @@
         "color": "RdYlGn",
         "clusters": 5
     },
-    "showZeros": true,
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
-            "field": "reporting_period"
+            "field": "reporting_period",
+            "showAllZeroPeriods": true
         },
         "filter": [
             "lead_agency",
