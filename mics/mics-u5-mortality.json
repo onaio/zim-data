@@ -17,7 +17,7 @@
     "property": "rate",
     "categories": {
         "breaks": "yes",
-        "color": "RdYlGn",
+        "color":["#1a9641","#a6d96a","#ffffbf","#fdae61","#d7191c"],
         "clusters": 5
     },
     "aggregate": {

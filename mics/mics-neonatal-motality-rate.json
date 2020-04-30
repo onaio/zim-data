@@ -1,10 +1,10 @@
 {
-    "label": "% of children age 1-14 years who experienced psychological aggression",
+    "label": "Neonatal  mortality rate (deaths per 1000 live births) - (2009-2019)",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 11475
+            "slice-id": 12880
         },
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
@@ -21,7 +21,7 @@
         "clusters": 5
     },
     "aggregate": {
-        "timeseries": {
+        "timeseries": {     
             "field": "period"
         }
     },
