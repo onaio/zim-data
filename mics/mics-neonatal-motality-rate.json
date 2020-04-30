@@ -1,0 +1,34 @@
+{
+    "label": "Neonatal  mortality rate (deaths per 1000 live births) - (2009-2019)",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 12880
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "rate",
+    "categories": {
+        "breaks": "yes",
+        "color":["#1a9641","#a6d96a","#ffffbf","#fdae61","#d7191c"],
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {     
+            "field": "period"
+        }
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Rate:</b> {{rate}}% </p>"
+    },
+    "visible": false,
+    "credit": "MICS"
+}
