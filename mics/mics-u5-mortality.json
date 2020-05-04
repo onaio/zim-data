@@ -27,7 +27,7 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>Rate:</b> {{rate}}% </p>"
+        "body": " <p style=text-align:left;><b>Rate:</b> {{rate}}</p>"
     },
     "visible": false,
     "credit": "MICS"
