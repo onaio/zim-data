@@ -5,6 +5,7 @@
       "layer": "building",
       "url": "mapbox://mapbox.mapbox-streets-v7"
     },
+    "visible": false,
     "type": "fill",
         "paint": {
           "fill-color": "#FF851B",
