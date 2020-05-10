@@ -1,0 +1,27 @@
+{
+    "label": "Number of children with red MUAC",
+    "source": {
+        "type": "vector",
+        "data": "data/vhw_data_province.csv",
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_PCODE",
+            "ADM1_PCODE"
+        ]
+    },
+    "type": "fill",
+    "property": "Children_6_59_referred_with_red_MUAC_this_month",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#008000","#f8bf84","#FF0000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "Province",
+        "body": " <p style=text-align:left;><b>Total children with red MUAC:</b> {{Children_6_59_referred_with_red_MUAC_this_month}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

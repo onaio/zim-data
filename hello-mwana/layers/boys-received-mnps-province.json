@@ -1,0 +1,27 @@
+{
+    "label": "Number of boys 6-59m who received MNPs",
+    "source": {
+        "type": "vector",
+        "data": "data/province_hfw_data.csv",
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_PCODE",
+            "ADM1_PCODE"
+        ]
+    },
+    "type": "fill",
+    "property": "Boys_given_MNPs_this_month",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "Province",
+        "body": " <p style=text-align:left;><b>Boys received MNPs:</b> {{Boys_given_MNPs_this_month}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

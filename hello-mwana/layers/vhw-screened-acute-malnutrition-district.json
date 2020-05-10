@@ -1,0 +1,27 @@
+{
+    "label": "Number of children screened for acute malnutrition",
+    "source": {
+        "type": "vector",
+        "data": "data/vhw_data_district.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "District_PCODE"
+    ]
+    },
+    "type": "fill",
+    "property": "Children_screened_for_acute_malnutrition",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Total children screened:</b> {{Children_screened_for_acute_malnutrition}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

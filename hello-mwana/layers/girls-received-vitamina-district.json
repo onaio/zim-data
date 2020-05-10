@@ -1,0 +1,27 @@
+{
+    "label": "Number of girls 6-59m who received Vitamin A",
+    "source": {
+        "type": "vector",
+        "data": "data/district_hfw_data.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "District_PCODE"
+    ]
+    },
+    "type": "fill",
+    "property": "Girls_given_Vitamin_A_this_month",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Girls recieved Vitamin A:</b> {{Girls_given_Vitamin_A_this_month}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

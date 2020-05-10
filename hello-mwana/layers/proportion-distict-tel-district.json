@@ -1,0 +1,27 @@
+{
+    "label": "Proportion of VHWs who submitted reports",
+    "source": {
+        "type": "vector",
+        "data": "data/count_distinct_tel_district.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "District_PCODE"
+    ]
+    },
+    "type": "fill",
+    "property": "tel_count",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Proportion:</b> {{tel_count}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

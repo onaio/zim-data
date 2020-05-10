@@ -1,0 +1,27 @@
+{
+    "label": "Proportion of VHWs who submitted reports",
+    "source": {
+        "type": "vector",
+        "data": "data/count_distinct_tel_province.csv",
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_PCODE",
+            "ADM1_PCODE"
+        ]
+    },
+    "type": "fill",
+    "property": "tel_count",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "Province",
+        "body": " <p style=text-align:left;><b> Proportion:</b> {{tel_count}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

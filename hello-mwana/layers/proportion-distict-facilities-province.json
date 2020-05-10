@@ -1,0 +1,27 @@
+{
+    "label": "Proportion of health facilities who submitted reports",
+    "source": {
+        "type": "vector",
+        "data": "data/count_distinct_facility_province.csv",
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_PCODE",
+            "ADM1_PCODE"
+        ]
+    },
+    "type": "fill",
+    "property": "total_distinct_facility",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "Province",
+        "body": " <p style=text-align:left;><b> Proportion:</b> {{total_distinct_facility}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

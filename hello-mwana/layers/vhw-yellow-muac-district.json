@@ -1,0 +1,27 @@
+{
+    "label": "Number of children with yellow MUAC",
+    "source": {
+        "type": "vector",
+        "data": "data/vhw_data_district.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "District_PCODE"
+    ]
+    },
+    "type": "fill",
+    "property": "Children_6_59_months_referred_with_yellow_MUAC_this_month",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#008000","#f8bf84","#FF0000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Total children with yellow MUAC:</b> {{Children_6_59_months_referred_with_yellow_MUAC_this_month}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

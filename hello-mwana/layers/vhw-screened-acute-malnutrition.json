@@ -1,0 +1,50 @@
+{
+    "label": "Number of children screened for acute malnutrition",
+   "source": {
+       "type": "geojson",
+       "featureType": "Point",
+       "data": "data/vhw_data_facility.csv",
+       "join": [
+        "Health_Facility_name",
+        "Health_Facility_name"
+
+       ],
+       "minzoom": 3
+        },
+        "type": "circle",
+        "property": "Children_screened_for_acute_malnutrition",
+        "radius-range": ["9","12","15"],
+        "categories": {
+          "breaks": "yes", 
+          "color": ["#FF0000","#f8bf84","#008000"],                                                                                                         
+          "cluster":3                                                                                                          
+          
+        },
+        "geo-columns": ["Longitude","Latitude"],
+        
+        "aggregate": {
+            "filter": [
+                "Province","District", "Ward"
+            ],
+            "accepted-filter-values": [
+                "all","all","all"
+            ],
+            "filter-label": [
+                "Province", "District", "Ward"
+            ],
+            "filter-type": [
+                "vBool","vBool","vBool"
+            ]
+        
+    },
+        
+
+        "popup": {
+            "header": "Health_facility_name",
+            "body": " <p style=text-align:left;> <b>Children screened:</b> {{Children_screened_for_acute_malnutrition}}<span style=float:right;>"
+        },
+        "visible": false,
+        "credit": " ",
+        "category": "Health Facility"
+        
+    }

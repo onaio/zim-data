@@ -1,0 +1,49 @@
+{
+    "label": "Proportion of girls with SAM",
+   "source": {
+       "type": "geojson",
+       "featureType": "Point",
+       "data": "data/hfw_data.csv",
+       "join": [
+        "Health_facility_number",
+        "Health_facility_number"
+
+       ],
+       "minzoom": 3
+        },
+        "type": "circle",
+        "property": "proportion_of_girls_with_SAM",
+        "radius-range": ["9","12","15"],
+        "categories": {
+          "breaks": "yes", 
+          "color": ["#FF0000","#f8bf84","#008000"],                                                                                                         
+          "cluster":3
+        },
+        "geo-columns": ["Longitude","Latitude"],
+        
+        "aggregate": {
+            "filter": [
+                "Province","District", "Ward"
+            ],
+            "accepted-filter-values": [
+                "all","all","all"
+            ],
+            "filter-label": [
+                "Province", "District", "Ward"
+            ],
+            "filter-type": [
+                "vBool","vBool","vBool"
+            ]
+        
+    },
+        
+
+        "popup": {
+            "header": "Health_facility_number",
+            "body": " <p style=text-align:left;> <b>Proportion:</b> {{proportion_of_girls_with_SAM}}%<span style=float:right;>"
+        },
+        "visible": false,
+        "credit": " ",
+        "category": "Health Facility"
+        
+    }

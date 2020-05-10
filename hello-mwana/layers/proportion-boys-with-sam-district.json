@@ -1,0 +1,27 @@
+{
+    "label": "Proportion of boys with SAM",
+    "source": {
+        "type": "vector",
+        "data": "data/district_hfw_data.csv",
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "District_PCODE"
+    ]
+    },
+    "type": "fill",
+    "property": "proportion_of_boys_with_SAM",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Proportion:</b> {{proportion_of_boys_with_SAM}}%</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

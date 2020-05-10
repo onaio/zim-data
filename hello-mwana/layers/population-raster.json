@@ -1,0 +1,57 @@
+{
+    "label": "Zimbabwe Population (raster)",
+    "source": {
+        "type": "vector",
+        "layer": "population_zwe_20181001",
+        "url": "mapbox://ona.3icw9dus"
+    },
+    "type": "fill",
+    "no-outline": true,
+    "paint": {
+        "fill-color": [
+            "interpolate",
+            [
+                "linear"
+            ],
+            [
+                "get",
+                "DN"
+            ],
+            0,
+            "#E6B71E",
+            5,
+            "#DA9C20",
+            10,
+            "#CA8323",
+            20,
+            "#B86B25",
+            100,
+            "#A25626",
+            1000,
+            "#8B4225"
+        ],
+        "fill-opacity": 0.5
+    },
+    "categories": {
+        "breaks": "no",
+        "label": [
+            "0",
+            "5",
+            "10",
+            "20",
+            "100",
+            "200"
+        ],
+        "color": [
+            "#E6B71E",
+            "#DA9C20",
+            "#CA8323",
+            "#B86B25",
+            "#A25626",
+            "#8B4225"
+        ]
+    },
+    "visible": false,
+    "credit": "Zimbabwe population",
+    "category": "Demographics"
+}
