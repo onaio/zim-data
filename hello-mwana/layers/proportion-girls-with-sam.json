@@ -16,7 +16,7 @@
         "radius-range": ["9","12","15"],
         "categories": {
           "breaks": "yes", 
-          "color": ["#FF0000","#f8bf84","#008000"],                                                                                                         
+           "color": ["#008000","#f8bf84","#FF0000"],                                                                                                         
           "cluster":3
         },
         "geo-columns": ["Longitude","Latitude"],
