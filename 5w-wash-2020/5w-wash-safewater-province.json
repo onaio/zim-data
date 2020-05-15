@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 11677
+            "slice-id": 13519
       
     },
     "layer": "zwe_adm1_province",
@@ -24,15 +24,16 @@
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
-            "field": "reporting_period"
+            "field": "reporting_period",
+            "showAllZeroPeriods": true
         },
         "filter": [
             "lead_agency",
             "implementing_partner",
-            "org_type",
+            "donor",
             "delivery_modality",
             "bene_type",
-            "status",
+            "status_1",
             "province"
             
         ],
@@ -49,7 +50,7 @@
         "filter-label": [
             "Lead Agency",
             "Implementing Partner",
-            "Organization Type",
+            "Donor",
             "Delivery Modality",
             "Beneficiary Type",
             "Status",
@@ -75,7 +76,7 @@
             "type": "multiple",
             "split": ","
         },
-        "org_type": {
+        "donor": {
             "type": "multiple",
             "split": ","
         },
@@ -83,7 +84,7 @@
             "type": "multiple",
             "split": ","
         },
-        "status": {
+        "status_1": {
             "type": "multiple",
             "split": ","
         },
@@ -100,12 +101,12 @@
             "mustache": "{{{province}}}"
         },
         "sub-title": {
-            "prop": "district",
-            "mustache": "{{{district}}}"
+            "prop": "district_1",
+            "mustache": "{{{district_1}}}"
         },
         "basic-info": [
             {
-                "value": "ward",
+                "value": "ward_1",
                 "icon": {
                     "FA": "bookmark"
                 },
@@ -135,6 +136,24 @@
                 "alt": "Female Targeted",
                 "useAltAsPrefix": true
             },
+            
+
+            {
+                "value": {
+                    "prop": "boys_targeted",
+                    "mustache": "{{{boys_targeted}}}"
+                },
+                "alt": "Boys Targeted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "girls_targeted",
+                    "mustache": "{{{girls_targeted}}}"
+                },
+                "alt": "Girls Targeted",
+                "useAltAsPrefix": true
+            },
             {
                 "value": {
                     "prop": "assisted",
@@ -159,6 +178,23 @@
                 "alt": "Female Assisted",
                 "useAltAsPrefix": true
             },
+
+            {
+                "value": {
+                    "prop": "boys_assisted",
+                    "mustache": "{{{boys_assisted}}}"
+                },
+                "alt": "Boys Assisted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "girls_assisted",
+                    "mustache": "{{{girls_targeted}}}"
+                },
+                "alt": "Girls Assisted",
+                "useAltAsPrefix": true
+            },
             {
                 "value": {
                     "prop": "lead_agency",
@@ -177,10 +213,10 @@
             },
             {
                 "value": {
-                    "prop": "org_type",
-                    "mustache": "{{{org_type}}}"
+                    "prop": "donor",
+                    "mustache": "{{{donor}}}"
                 },
-                "alt": "Organization Type",
+                "alt": "Donor",
                 "useAltAsPrefix": true
             },
             {
@@ -201,16 +237,16 @@
             },
             {
                 "value": {
-                    "prop": "status",
-                    "mustache": "{{{status}}}"
+                    "prop": "status_1",
+                    "mustache": "{{{status_1}}}"
                 },
                 "alt": "Status",
                 "useAltAsPrefix": true
             },
             {
                 "value": {
-                    "prop": "comments",
-                    "mustache": "{{{comments}}}"
+                    "prop": "comments_1",
+                    "mustache": "{{{comments_1}}}"
                 },
                 "alt": "Comments",
                 "useAltAsPrefix": true
@@ -219,7 +255,7 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{assisted}}<br><b>Present Lead Agencies:</b> {{no_agencies}}<br><b>Number of Implementing Partners:</b> {{no_ips}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{assisted}}<br><b>Present Lead Agencies:</b> {{agencies}}<br><b>Number of Implementing Partners:</b> {{no_ips}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
