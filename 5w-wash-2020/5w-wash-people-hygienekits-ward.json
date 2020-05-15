@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 11692
+            "slice-id": 13523
       
     },
     "layer": "full_ward_name_new",
@@ -30,12 +30,12 @@
         "filter": [
             "lead_agency",
             "implementing_partner",
-            "org_type",
+            "donor",
             "delivery_modality",
             "bene_type",
-            "status",
-            "province",
-            "district",
+            "status_1",
+            "province_1",
+            "district_1",
             "ward"
             
         ],
@@ -54,7 +54,7 @@
         "filter-label": [
             "Lead Agency",
             "Implementing Partner",
-            "Organization Type",
+            "Donor",
             "Delivery Modality",
             "Beneficiary Type",
             "Status",
@@ -84,7 +84,7 @@
             "type": "multiple",
             "split": ","
         },
-        "org_type": {
+        "donor": {
             "type": "multiple",
             "split": ","
         },
@@ -92,7 +92,7 @@
             "type": "multiple",
             "split": ","
         },
-        "status": {
+        "status_1": {
             "type": "multiple",
             "split": ","
         },
@@ -100,29 +100,29 @@
             "type": "multiple",
             "split": ","
         },
-        "province": {
+        "province_1": {
             "type": "multiple",
             "split": ","
         },
-        "district": {
+        "district_1": {
             "type": "multiple",
             "split": ","
         }
 
     },
     "detail-view": {
-        "UID": "province",
+        "UID": "province_1",
         "title": {
-            "prop": "province",
-            "mustache": "{{{province}}}"
+            "prop": "province_1",
+            "mustache": "{{{province_1}}}"
         },
         "sub-title": {
-            "prop": "district",
-            "mustache": "{{{district}}}"
+            "prop": "district_1",
+            "mustache": "{{{district_1}}}"
         },
         "basic-info": [
             {
-                "value": "ward",
+                "value": "ward_1",
                 "icon": {
                     "FA": "bookmark"
                 },
@@ -154,6 +154,22 @@
             },
             {
                 "value": {
+                    "prop": "boys_targeted",
+                    "mustache": "{{{boys_targeted}}}"
+                },
+                "alt": "Boys Targeted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "girls_targeted",
+                    "mustache": "{{{girls_targeted}}}"
+                },
+                "alt": "Girls Targeted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
                     "prop": "assisted",
                     "mustache": "{{{assisted}}}"
                 },
@@ -178,6 +194,22 @@
             },
             {
                 "value": {
+                    "prop": "boys_assisted",
+                    "mustache": "{{{boys_assisted}}}"
+                },
+                "alt": "Boys Assisted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
+                    "prop": "girls_assisted",
+                    "mustache": "{{{girls_targeted}}}"
+                },
+                "alt": "Girls Assisted",
+                "useAltAsPrefix": true
+            },
+            {
+                "value": {
                     "prop": "lead_agency",
                     "mustache": "{{{lead_agency}}}"
                 },
@@ -194,10 +226,10 @@
             },
             {
                 "value": {
-                    "prop": "org_type",
-                    "mustache": "{{{org_type}}}"
+                    "prop": "donor",
+                    "mustache": "{{{donor}}}"
                 },
-                "alt": "Organization Type",
+                "alt": "Donor",
                 "useAltAsPrefix": true
             },
             {
@@ -218,16 +250,16 @@
             },
             {
                 "value": {
-                    "prop": "status",
-                    "mustache": "{{{status}}}"
+                    "prop": "status_1",
+                    "mustache": "{{{status_1}}}"
                 },
                 "alt": "Status",
                 "useAltAsPrefix": true
             },
             {
                 "value": {
-                    "prop": "comments",
-                    "mustache": "{{{comments}}}"
+                    "prop": "comments_1",
+                    "mustache": "{{{comments_1}}}"
                 },
                 "alt": "Comments",
                 "useAltAsPrefix": true
@@ -236,7 +268,7 @@
     },
     "popup": {
         "header": "ward",
-        "body": " <p style=text-align:left;><b>People Reached:</b> {{assisted}}<br><b>Present Lead Agencies:</b> {{no_agencies}}<br><b>Number of Implementing Partners:</b> {{no_ips}}</p>"
+        "body": " <p style=text-align:left;><b>People Reached:</b> {{assisted}}<br><b>Present Lead Agencies:</b> {{agencies}}<br><b>Number of Implementing Partners:</b> {{no_ips}}</p>"
     },
     "visible": false,
     "credit": "Cluster"
