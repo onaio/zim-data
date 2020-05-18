@@ -3,10 +3,12 @@
    "source": {
        "type": "geojson",
        "featureType": "Point",
-       "data": "data/hfw_data.csv",
+       "data": {
+        "type": "superset",
+        "slice-id": 13506},
        "join": [
-        "Health_facility_number",
-        "Health_facility_number"
+        "Facility_Name",
+        "Facility_Name"
 
        ],
        "minzoom": 3
@@ -33,13 +35,19 @@
             ],
             "filter-type": [
                 "vBool","vBool","vBool"
-            ]
+            ],
+            "aggregate": {
+                "timeseries": {
+                    "type": "cumulative",
+                    "field": "week_year"
+                }
+            }
         
     },
         
 
         "popup": {
-            "header": "Health_facility_number",
+            "header": "Facility_Name",
             "body": " <p style=text-align:left;> <b>Proportion:</b> {{proportion_of_boys_with_SAM}}%<span style=float:right;>"
         },
         "visible": false,

@@ -2,7 +2,9 @@
     "label": "Proportion of boys with SAM",
     "source": {
         "type": "vector",
-        "data": "data/district_hfw_data.csv",
+        "data":  {
+            "type": "superset",
+            "slice-id": 13534},
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
@@ -17,6 +19,13 @@
         "color": ["#008000","#f8bf84","#FF0000"],
         "clusters": 3
     },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
+    },
+    
     
     "popup": {
         "header": "District",
