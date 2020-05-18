@@ -2,7 +2,9 @@
     "label": "Number of boys 6-59m who received Vitamin A",
     "source": {
         "type": "vector",
-        "data": "data/province_hfw_data.csv",
+        "data":  {
+            "type": "superset",
+            "slice-id": 13533},
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
         "join": [
@@ -17,7 +19,12 @@
         "color": ["#FF0000","#f8bf84","#008000"],
         "clusters": 3
     },
-    
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
+    },
     "popup": {
         "header": "Province",
         "body": " <p style=text-align:left;><b>Boys received Vitamin A:</b> {{Boys_given_Vitamin_A_this_month}}</p>"

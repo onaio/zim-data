@@ -2,7 +2,9 @@
     "label": "Number of Caregivers who received IYCF-e messages",
     "source": {
         "type": "vector",
-        "data": "data/district_hfw_data.csv",
+        "data":  {
+            "type": "superset",
+            "slice-id": 13534},
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
@@ -16,6 +18,12 @@
         "breaks": "yes",
         "color": ["#FF0000","#f8bf84","#008000"],
         "clusters": 3
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
     },
     
     "popup": {

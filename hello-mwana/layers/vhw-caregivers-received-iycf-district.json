@@ -2,7 +2,9 @@
     "label": "Number of caregivers who received IYCF messages",
     "source": {
         "type": "vector",
-        "data": "data/vhw_data_district.csv",
+        "data":  {
+            "type": "superset",
+            "slice-id": 13536},
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
@@ -17,7 +19,12 @@
         "color": ["#FF0000","#f8bf84","#008000"],
         "clusters": 3
     },
-    
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
+    },
     "popup": {
         "header": "District",
         "body": " <p style=text-align:left;><b>Mothers and caregivers supported:</b> {{Mothers_and_caregivers_of_children_under_2yrs_supported_with_IYC}}</p>"

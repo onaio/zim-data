@@ -2,7 +2,9 @@
     "label": "Number of children with red MUAC",
     "source": {
         "type": "vector",
-        "data": "data/vhw_data_province.csv",
+        "data":  {
+            "type": "superset",
+            "slice-id": 13535},
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
         "join": [
@@ -16,6 +18,12 @@
         "breaks": "yes",
         "color": ["#008000","#f8bf84","#FF0000"],
         "clusters": 3
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
     },
     
     "popup": {

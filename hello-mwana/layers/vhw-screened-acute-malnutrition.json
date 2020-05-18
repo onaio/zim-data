@@ -3,10 +3,12 @@
    "source": {
        "type": "geojson",
        "featureType": "Point",
-       "data": "data/vhw_data_facility.csv",
+       "data": {
+        "type": "superset",
+        "slice-id": 13419},
        "join": [
-        "Health_Facility_name",
-        "Health_Facility_name"
+        "Facility_Name",
+        "Facility_Name"
 
        ],
        "minzoom": 3
@@ -34,13 +36,17 @@
             ],
             "filter-type": [
                 "vBool","vBool","vBool"
-            ]
+            ],
+            "timeseries": {
+                "type": "cumulative",
+                "field": "week_year"
+            }
         
     },
         
 
         "popup": {
-            "header": "Health_facility_name",
+            "header": "Facility_Name",
             "body": " <p style=text-align:left;> <b>Children screened:</b> {{Children_screened_for_acute_malnutrition}}<span style=float:right;>"
         },
         "visible": false,

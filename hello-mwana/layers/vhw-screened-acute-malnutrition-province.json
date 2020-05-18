@@ -2,7 +2,9 @@
     "label": "Number of children screened for acute malnutrition",
     "source": {
         "type": "vector",
-        "data": "data/vhw_data_province.csv",
+        "data": {
+            "type": "superset",
+            "slice-id": 13535},
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
         "join": [
@@ -17,7 +19,12 @@
         "color": ["#FF0000","#f8bf84","#008000"],
         "clusters": 3
     },
-    
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
+    },
     "popup": {
         "header": "Province",
         "body": " <p style=text-align:left;><b>Total children screened:</b> {{Children_screened_for_acute_malnutrition}}</p>"
