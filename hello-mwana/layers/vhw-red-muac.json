@@ -3,7 +3,9 @@
    "source": {
        "type": "geojson",
        "featureType": "Point",
-       "data": "data/vhw_data_facility.csv",
+       "data": {
+        "type": "superset",
+        "slice-id": 13419},
        "join": [
         "Facility_Name",
         "Facility_Name"
@@ -12,7 +14,7 @@
        "minzoom": 3
         },
         "type": "circle",
-        "property": "Children_6.59_referred_with_red_MUAC_this_month",
+        "property": "Children_6_59_referred_with_red_MUAC_this_month",
         "radius-range": ["9","12","15"],
         "categories": {
           "breaks": "yes", 
@@ -45,7 +47,7 @@
 
         "popup": {
             "header": "Facility_Name",
-            "body": " <p style=text-align:left;> <b>Children referred with red MUAC:</b> {{Children_6.59_referred_with_red_MUAC_this_month}}<span style=float:right;>"
+            "body": " <p style=text-align:left;> <b>Children referred with red MUAC:</b> {{Children_6_59_referred_with_red_MUAC_this_month}}<span style=float:right;>"
         },
         "visible": false,
         "credit": " ",

@@ -13,7 +13,7 @@
         ]
     },
     "type": "fill",
-    "property": "Mothers_and_caregivers_of_children_under_2yrs_supported_with_IYC",
+    "property": "Mothers_and_caregivers_supported_with_IYC",
     "categories": {
         "breaks": "yes",
         "color": ["#FF0000","#f8bf84","#008000"],
@@ -27,7 +27,7 @@
     },
     "popup": {
         "header": "Province",
-        "body": " <p style=text-align:left;><b>Mothers and caregivers supported:</b> {{Mothers_and_caregivers_of_children_under_2yrs_supported_with_IYC}}</p>"
+        "body": " <p style=text-align:left;><b>Mothers and caregivers supported:</b> {{Mothers_and_caregivers_supported_with_IYC}}</p>"
     },
     "visible": false,
     "credit": " "

@@ -1,57 +1,56 @@
 {
     "label": "GAM prevalence",
-   "source": {
-       "type": "geojson",
-       "featureType": "Point",
-       "data": {
-        "type": "superset",
-        "slice-id": 13506},
-       "join": [
-        "Facility_Name",
-        "Facility_Name"
-
-       ],
-       "minzoom": 3
-        },
-        "type": "circle",
-        "property": "GAM_prevalence",
-        "radius-range": ["9","12","15"],
-        "categories": {
-          "breaks": "yes", 
-          "color": ["#008000","#f8bf84","#FF0000"],                                                                                                        
-          "cluster":3  
-        },
-        "geo-columns": ["Longitude","Latitude"],
-        
-        "aggregate": {
-            "filter": [
-                "Province","District", "Ward"
-            ],
-            "accepted-filter-values": [
-                "all","all","all"
-            ],
-            "filter-label": [
-                "Province", "District", "Ward"
-            ],
-            "filter-type": [
-                "vBool","vBool","vBool"
-            ],
-            "aggregate": {
-                "timeseries": {
-                    "type": "cumulative",
-                    "field": "week_year"
-                }
-            }
-        
-    },
-        
-
-        "popup": {
-            "header": "Facility_Name",
-            "body": " <p style=text-align:left;> <b>Proportion:</b> {{GAM_prevalence}}%<span style=float:right;>"
-        },
-        "visible": false,
-        "credit": " ",
-        "category": "Health Facility"
-        
-    }
+    "source": {
+        "type": "geojson",
+        "featureType": "Point",
+        "data": {
+         "type": "superset",
+         "slice-id": 13506},
+        "join": [
+         "Facility_Name",
+         "Facility_Name"
+ 
+        ],
+        "minzoom": 3
+         },
+         "type": "circle",
+         "property": "GAM_prevalence",
+         "radius-range": ["9","12","15"],
+         "categories": {
+           "breaks": "yes", 
+           "color": ["#008000","#f8bf84","#FF0000"],                                                                                                         
+           "cluster":3                                                                                                          
+           
+         },
+         "geo-columns": ["Longitude","Latitude"],
+         
+         "aggregate": {
+             "filter": [
+                 "Province","District", "Ward"
+             ],
+             "accepted-filter-values": [
+                 "all","all","all"
+             ],
+             "filter-label": [
+                 "Province", "District", "Ward"
+             ],
+             "filter-type": [
+                 "vBool","vBool","vBool"
+             ],
+             "timeseries": {
+                 "type": "cumulative",
+                 "field": "week_year"
+             }
+         
+     },
+         
+ 
+         "popup": {
+             "header": "Facility_Name",
+             "body": " <p style=text-align:left;> <b>GAM prevalence:</b> {{GAM_prevalence}}%<span style=float:right;>"
+         },
+         "visible": false,
+         "credit": " ",
+         "category": "Health Facility"
+         
+     }
