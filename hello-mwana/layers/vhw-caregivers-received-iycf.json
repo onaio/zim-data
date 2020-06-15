@@ -17,9 +17,10 @@
         "property": "Mothers_and_caregivers_supported_with_IYC",
         "radius-range": ["9","12","15"],
         "categories": {
-          "breaks": "yes", 
-          "color": ["#FF0000","#f8bf84","#008000"],                                                                                                         
-          "cluster":3                                                                                                         
+            "breaks": "no", 
+            "limit": [1,4,1000],
+            "label":["0-1","2-4","5 or more"], 
+          "color": ["#FF0000","#f8bf84","#008000"]                                                                          
           
         },
         "geo-columns": ["Longitude","Latitude"],
