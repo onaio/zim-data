@@ -17,9 +17,10 @@
         "property": "Boys_admitted_with_MAM_this_month",
         "radius-range": ["9","12","15"],
         "categories": {
-          "breaks": "yes", 
-          "color": ["#008000","#f8bf84","#FF0000"],                                                                                                         
-          "cluster":3                                                                                                         
+            "breaks": "no", 
+            "limit": [4,8,1000],
+            "label":["0-4","4-8","9 or more"], 
+          "color": ["#008000","#f8bf84","#FF0000"]                                                                            
           
         },
         "geo-columns": ["Longitude","Latitude"],

@@ -17,9 +17,10 @@
          "property": "GAM_prevalence",
          "radius-range": ["9","12","15"],
          "categories": {
-           "breaks": "yes", 
-           "color": ["#008000","#f8bf84","#FF0000"],                                                                                                         
-           "cluster":3                                                                                                          
+            "breaks": "no", 
+        "limit": [1, 4, 100],
+        "label":["=<0-1%","2-4%","=>5%"], 
+           "color": ["#008000","#f8bf84","#FF0000"]                                                                            
            
          },
          "geo-columns": ["Longitude","Latitude"],

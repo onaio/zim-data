@@ -17,9 +17,10 @@
         "property": "Children_6_59_referred_with_red_MUAC_this_month",
         "radius-range": ["9","12","15"],
         "categories": {
-          "breaks": "yes", 
-          "color": ["#008000","#f8bf84","#FF0000"],                                                                                                         
-          "cluster":3                                                                                                          
+            "breaks": "no", 
+            "limit": [1,4,1000],
+            "label":["0-1","2-4","5 or more"], 
+          "color": ["#008000","#f8bf84","#FF0000"]                                                                            
           
         },
         "geo-columns": ["Longitude","Latitude"],

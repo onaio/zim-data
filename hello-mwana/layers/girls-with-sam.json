@@ -17,9 +17,10 @@
         "property": "Girls_admitted_with_SAM_this_month",
         "radius-range": ["9","12","15"],
         "categories": {
-          "breaks": "yes", 
-          "color": ["#008000","#f8bf84","#FF0000"],                                                                                                         
-          "cluster":3                                                                                                          
+            "breaks": "no", 
+            "limit": [2,6,1000],
+            "label":["0-2","3-6","6 or more"], 
+          "color": ["#008000","#f8bf84","#FF0000"]                                                                             
           
         },
         "geo-columns": ["Longitude","Latitude"],
