@@ -5,7 +5,7 @@
        "featureType": "Point",
        "data": {
         "type": "superset",
-        "slice-id": 13506},
+        "slice-id": 75},
        "join": [
         "Facility_Name",
         "Facility_Name"
@@ -18,7 +18,7 @@
         "radius-range": ["9","12","15"],
         "categories": {
             "breaks": "no", 
-            "limit": [2,6,1000],
+            "limit": [2,6,3000],
             "label":["0-2","3-6","6 or more"],
           "color": ["#008000","#f8bf84","#FF0000"]                                                                            
           
