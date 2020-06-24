@@ -4,7 +4,7 @@
         "type": "vector",
         "data":  {
             "type": "superset",
-            "slice-id": 76},
+            "slice-id": 77},
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
         "join": [
