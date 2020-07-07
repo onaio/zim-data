@@ -1,0 +1,62 @@
+{
+    "label": "Cholera Cases Reported < 5 years - District Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 78
+        },
+    "layer": "zwe_adm2_district",
+    "url": "mapbox://ona.62o31uy4",
+    "join": [
+        "ADM2_PCODE",
+        "district_pcode"
+    ]
+},
+"type": "fill",
+"property": "cholera_below_5yrs_cases",
+"categories": {
+    "breaks": "yes",
+    "color": "Oranges",
+    "clusters": 5
+},
+"aggregate": {
+    "no-sort": true,
+    "timeseries": {
+        "type": "cumulative",
+        "field": "week_date"
+    },
+    "filter": [
+        "province",
+        "district"
+    ],
+    "accepted-filter-values": [
+        "multi",
+        "multi"
+    ],
+    "filter-label": [
+        "Province",
+        "District"
+    ],
+    "filter-type": [
+        "vBool",
+        "vBool"
+    ]
+},
+"data-parse": {
+    "province": {
+        "type": "multiple",
+        "split": ","
+    },
+    "district": {
+        "type": "multiple",
+        "split": ","
+    }
+},
+"popup": {
+    "header": "district",
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{cholera_below_5yrs_cases}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}

@@ -1,0 +1,48 @@
+{
+    "label": "Dysentery Cases Reported < 5 years - Province Level",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 79
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_PCODE",
+            "province_pcode"
+        ]
+    },
+    "type": "fill",
+    "property": "dysentery_below_5yrs_cases",
+    "categories": {
+        "breaks": "yes",
+        "color": "Oranges",
+        "clusters": 5
+    },
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_date"
+        },
+        "filter": [
+            "province"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "Province"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Cases Reported:</b> {{dysentery_below_5yrs_cases}}</p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
