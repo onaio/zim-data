@@ -24,6 +24,7 @@
         "geo-columns": ["Longitude","Latitude"],
         
         "aggregate": {
+            "no-sort": true,
             "filter": [
                 "Province","District", "Ward"
             ],

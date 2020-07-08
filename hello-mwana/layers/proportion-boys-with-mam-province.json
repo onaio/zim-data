@@ -21,6 +21,7 @@
         "color": ["#008000","#f8bf84","#FF0000"]
     },
     "aggregate": {
+        "no-sort": true,
         "timeseries": {
             "type": "cumulative",
             "field": "week_year"

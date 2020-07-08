@@ -26,6 +26,7 @@
         "geo-columns": ["Longitude","Latitude"],
         
         "aggregate": {
+            "no-sort": true,
             "timeseries": {
                 "type": "cumulative",
                 "field": "week_year"

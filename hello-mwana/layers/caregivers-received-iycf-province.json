@@ -21,6 +21,7 @@
     },
     "aggregate": {
         "timeseries": {
+            "no-sort": true,
             "type": "cumulative",
             "field": "week_year"
         }

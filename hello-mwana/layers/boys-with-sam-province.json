@@ -20,7 +20,9 @@
         "clusters": 3
     },
     "aggregate": {
+        "no-sort": true,
         "timeseries": {
+
             "type": "cumulative",
             "field": "week_year"
         }
