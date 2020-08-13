@@ -1,0 +1,55 @@
+{
+    "label": "Proportion of health facilities with no stockouts ",
+    "source": {
+        "type": "vector",
+        "data":  {
+            "type": "superset",
+            "slice-id":380},
+            "layer": "zwe_adm2_district",
+            "url": "mapbox://ona.62o31uy4",
+            "join": [
+                "ADM1_EN",
+                "province"
+                
+        ]
+    },
+    "type": "fill",
+    "property": "no_stock_out",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        },
+        "filter": [
+            "province"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "Province"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "province": {
+            "type": "multiple",
+            "split": ","
+        }
+
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Proportion of health facilities with no stockouts:</b> {{no_stock_out}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

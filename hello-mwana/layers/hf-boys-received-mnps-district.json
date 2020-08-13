@@ -1,0 +1,35 @@
+{
+    "label": "Number of boys 6-59m who received MNPs",
+    "source": {
+        "type": "vector",
+        "data":  {
+            "type": "superset",
+            "slice-id": 76},
+        "layer": "zwe_adm2_district",
+        "url": "mapbox://ona.62o31uy4",
+        "join": [
+            "ADM2_PCODE",
+            "District_PCODE"
+    ]
+    },
+    "type": "fill",
+    "property": "Boys_given_MNPs_this_month",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        }
+    },
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Boys recieved MNPs:</b> {{Boys_given_MNPs_this_month}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

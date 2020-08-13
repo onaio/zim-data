@@ -1,0 +1,67 @@
+{
+    "label": "Number of girls 6-59m who received MNPs",
+    "source": {
+        "type": "geojson",
+        "featureType": "Point",
+        "data": {
+         "type": "superset",
+         "slice-id": 382},
+        "join": [
+         "id",
+         "id"
+ 
+        ],
+        "minzoom": 3
+         },
+         "type": "circle",
+        "property": "girls_mnps",
+        "radius-range": ["9","12","15"],
+        "categories": {
+          "breaks": "no", 
+          "limit": [7,20,5000],
+          "label":["0-7","8-20","20 or more"],
+          "color": ["#FF0000","#f8bf84","#008000"]                                                                            
+          
+        },
+         "geo-columns": ["longitude","latitude"],
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        },
+        "filter": [
+            "province","district","health_facility"
+        ],
+        "accepted-filter-values": [
+            "all","all","all"
+        ],
+        "filter-label": [
+            "Province", "District", "Health Facility"
+        ],
+        "filter-type": [
+            "vBool","vBool","vBool"
+        ]
+    },
+    "data-parse": {
+        "district": {
+            "type": "multiple",
+            "split": ","
+        },
+        "province": {
+            "type": "multiple",
+            "split": ","
+        },
+        "health_facility": {
+            "type": "multiple",
+            "split": ","
+        }
+
+    },
+    "popup": {
+        "header": "health_facility",
+        "body": " <p style=text-align:left;><b>Boys recieved MNPs:</b> {{girls_mnps}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

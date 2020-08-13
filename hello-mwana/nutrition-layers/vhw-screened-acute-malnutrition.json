@@ -1,0 +1,58 @@
+{
+    "label": "Number of children screened for acute malnutrition",
+   "source": {
+       "type": "geojson",
+       "featureType": "Point",
+       "data": {
+        "type": "superset",
+        "slice-id": 71},
+       "join": [
+        "Facility_Name",
+        "Facility_Name"
+
+       ],
+       "minzoom": 3
+        },
+        "type": "circle",
+        "property": "Children_screened_for_acute_malnutrition",
+        "radius-range": ["9","12","15"],
+        "categories": {
+            "breaks": "no", 
+            "limit": [19,39,50000],
+            "label":["0-19","20-39","40 or more"], 
+          "color": ["#FF0000","#f8bf84","#008000"]                                                                             
+          
+        },
+        "geo-columns": ["Longitude","Latitude"],
+        
+        "aggregate": {
+            "no-sort": true,
+            "filter": [
+                "Province","District", "Ward"
+            ],
+            "accepted-filter-values": [
+                "all","all","all"
+            ],
+            "filter-label": [
+                "Province", "District", "Ward"
+            ],
+            "filter-type": [
+                "vBool","vBool","vBool"
+            ],
+            "timeseries": {
+                "type": "cumulative",
+                "field": "week_year"
+            }
+        
+    },
+        
+
+        "popup": {
+            "header": "Facility_Name",
+            "body": " <p style=text-align:left;> <b>Children screened:</b> {{Children_screened_for_acute_malnutrition}}<span style=float:right;>"
+        },
+        "visible": false,
+        "credit": " ",
+        "category": "Health Facility"
+        
+    }
