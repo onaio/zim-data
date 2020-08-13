@@ -1,0 +1,60 @@
+{
+    "label": "Number of girls 6-59m who received MNPs",
+    "source": {
+        "type": "vector",
+        "data":  {
+            "type": "superset",
+            "slice-id": 381},
+            "layer": "zwe_adm2_district",
+            "url": "mapbox://ona.62o31uy4",
+            "join": [
+                "ADM2_EN",
+                "district"
+                
+        ]
+    },
+    "type": "fill",
+    "property": "girls_mnps",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        },
+        "filter": [
+            "province","district"
+        ],
+        "accepted-filter-values": [
+            "all","all"
+        ],
+        "filter-label": [
+            "Province", "District"
+        ],
+        "filter-type": [
+            "vBool","vBool"
+        ]
+    },
+    "data-parse": {
+        "district": {
+            "type": "multiple",
+            "split": ","
+        },
+        "province": {
+            "type": "multiple",
+            "split": ","
+        }
+
+    },
+    
+    "popup": {
+        "header": "district",
+        "body": " <p style=text-align:left;><b>Boys recieved MNPs:</b> {{girls_mnps}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

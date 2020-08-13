@@ -1,0 +1,60 @@
+{
+    "label": "Proportion of children with SAM",
+    "source": {
+        "type": "vector",
+        "data":  {
+            "type": "superset",
+            "slice-id": 381},
+            "layer": "zwe_adm2_district",
+            "url": "mapbox://ona.62o31uy4",
+            "join": [
+                "ADM2_EN",
+                "district"
+                
+        ]
+    },
+    "type": "fill",
+    "property": "Children_6_59_months_given_Vitamin_A_this_month",
+    "categories": {
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
+    },
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "week_year"
+        },
+        "filter": [
+            "province","district"
+        ],
+        "accepted-filter-values": [
+            "all","all"
+        ],
+        "filter-label": [
+            "Province", "District"
+        ],
+        "filter-type": [
+            "vBool","vBool"
+        ]
+    },
+    "data-parse": {
+        "district": {
+            "type": "multiple",
+            "split": ","
+        },
+        "province": {
+            "type": "multiple",
+            "split": ","
+        }
+
+    },
+    
+    "popup": {
+        "header": "District",
+        "body": " <p style=text-align:left;><b>Proportion of children with SAM:</b> {{Children_6_59_months_given_Vitamin_A_this_month}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

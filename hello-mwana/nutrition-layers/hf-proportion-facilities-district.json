@@ -1,0 +1,38 @@
+{
+    "label": "Proportion of health facilities who submitted reports",
+    "source": {
+        "type": "vector",
+        "data":  {
+            "type": "superset",
+            "slice-id": 394},
+            "layer": "zwe_adm2_district",
+            "url": "mapbox://ona.62o31uy4",
+            "join": [
+                "ADM2_EN",
+                "district"
+                
+        ]
+    },
+    "type": "fill",
+    "property": "hfs",
+    "categories": {
+        "breaks": "no", 
+        "limit": [50,79,1000],
+        "label":["=<50%","51%-79%","=>80%"],
+        "color": ["#FF0000","#f8bf84","#008000"]
+    },
+    "aggregate": {
+        "no-sort": false,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        }
+    },
+    
+    "popup": {
+        "header": "district",
+        "body": " <p style=text-align:left;><b>Proportion:</b> {{hfs}}</p>"
+    },
+    "visible": false,
+    "credit": " "
+}

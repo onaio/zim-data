@@ -1,0 +1,58 @@
+{
+    "label": "Number of caregivers who received IYCF messages",
+   "source": {
+       "type": "geojson",
+       "featureType": "Point",
+       "data": {
+        "type": "superset",
+        "slice-id": 71},
+       "join": [
+        "Facility_Name",
+        "Facility_Name"
+
+       ],
+       "minzoom": 3
+        },
+        "type": "circle",
+        "property": "Mothers_and_caregivers_supported_with_IYC",
+        "radius-range": ["9","12","15"],
+        "categories": {
+            "breaks": "no", 
+            "limit": [1,4,30000],
+            "label":["0-1","2-4","5 or more"], 
+          "color": ["#FF0000","#f8bf84","#008000"]                                                                          
+          
+        },
+        "geo-columns": ["Longitude","Latitude"],
+        
+        "aggregate": {
+            "no-sort": true,
+            "filter": [
+                "Province","District", "Ward"
+            ],
+            "accepted-filter-values": [
+                "all","all","all"
+            ],
+            "filter-label": [
+                "Province", "District", "Ward"
+            ],
+            "filter-type": [
+                "vBool","vBool","vBool"
+            ],
+            "timeseries": {
+                "type": "cumulative",
+                "field": "week_year"
+            }
+        
+    },
+        
+
+        "popup": {
+            "header": "Facility_Name",
+            "body": " <p style=text-align:left;> <b>Mothers and caregivers supported:</b> {{Mothers_and_caregivers_supported_with_IYC}}<span style=float:right;>"
+        },
+        "visible": false,
+        "credit": " ",
+        "category": "Health Facility"
+        
+    }

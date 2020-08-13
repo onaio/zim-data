@@ -1,0 +1,58 @@
+{
+    "label": "Proportion of girls with SAM",
+    "source": {
+        "type": "vector",
+        "data":  {
+            "type": "superset",
+            "slice-id":380},
+            "layer": "zwe_adm2_district",
+            "url": "mapbox://ona.62o31uy4",
+            "join": [
+                "ADM1_EN",
+                "province"
+                
+        ]
+    },
+    "type": "fill",
+    "property": "prop_girls_sam",
+    "categories": {
+        "breaks": "no", 
+        "limit": [0.5,1.25,1000],
+        "label":["=<0.5%","0.6%-1.25%","=>1.26%"],
+        "color": ["#008000","#f8bf84","#FF0000"]
+    },
+    "aggregate": {
+        "no-sort": true,
+        "timeseries": {
+            "type": "cumulative",
+            "field": "period"
+        },
+        "filter": [
+            "province"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "Province"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "data-parse": {
+        "province": {
+            "type": "multiple",
+            "split": ","
+        }
+
+    },
+    
+    
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Proportion:</b> {{prop_girls_sam}}%</p>"
+    },
+    "visible": false,
+    "credit": " "
+}
