@@ -8,10 +8,9 @@
             "layer": "zwe_adm2_district",
             "url": "mapbox://ona.62o31uy4",
             "join": [
-                "ADM1_EN",
-                "province"
-                
-        ]
+        "ADM1_PCODE",
+        "province_id"
+    ]
     },
     "type": "fill",
     "property": "children_acute_mal",
