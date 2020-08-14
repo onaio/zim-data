@@ -8,10 +8,9 @@
             "layer": "zwe_adm2_district",
             "url": "mapbox://ona.62o31uy4",
             "join": [
-                "ADM2_EN",
-                "district"
-                
-        ]
+                "ADM2_PCODE",
+                "district_id"
+            ]
     },
     "type": "fill",
     "property": "red_muac",
