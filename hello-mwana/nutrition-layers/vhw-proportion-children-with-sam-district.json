@@ -4,7 +4,7 @@
         "type": "vector",
         "data":  {
             "type": "superset",
-            "slice-id": 381},
+            "slice-id": 384},
             "layer": "zwe_adm2_district",
             "url": "mapbox://ona.62o31uy4",
             "join": [
@@ -13,7 +13,7 @@
             ]
     },
     "type": "fill",
-    "property": "Children_6_59_months_given_Vitamin_A_this_month",
+    "property": "prop_sam",
     "categories": {
         "breaks": "yes",
         "color": ["#FF0000","#f8bf84","#008000"],
@@ -51,8 +51,8 @@
     },
     
     "popup": {
-        "header": "District",
-        "body": " <p style=text-align:left;><b>Proportion of children with SAM:</b> {{Children_6_59_months_given_Vitamin_A_this_month}}</p>"
+        "header": "district",
+        "body": " <p style=text-align:left;><b>Proportion of children with SAM:</b> {{prop_children_sam}}</p>"
     },
     "visible": false,
     "credit": " "

@@ -14,11 +14,11 @@
         "minzoom": 3
          },
          "type": "circle",
-        "property": "prop_boys_mam",
+        "property": "prop_boys_sam",
         "radius-range": ["9","12","15"],
         "categories": {
           "breaks": "no", 
-          "limit": [7,20,5000],
+          "limit": [7,20,500000],
           "label":["0-7","8-20","20 or more"],
           "color": ["#FF0000","#f8bf84","#008000"]                                                                            
           
@@ -60,7 +60,7 @@
     },
     "popup": {
         "header": "health_facility",
-        "body": " <p style=text-align:left;><b>Proportion:</b> {{prop_boys_mam}}%</p>"
+        "body": " <p style=text-align:left;><b>Proportion:</b> {{prop_boys_sam}}%</p>"
     },
     "visible": false,
     "credit": " "
