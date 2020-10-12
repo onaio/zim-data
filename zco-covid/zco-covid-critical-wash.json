@@ -1,0 +1,61 @@
+{
+    "label": "Number of people reached with critical WASH supplies (including hygiene items) and services",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 17505
+        },
+    "layer": "zwe_adm1_province",
+    "url": "mapbox://ona.9h0dpqlh",
+    "join": [
+        "ADM1_PCODE",
+        "province_code"
+    ]
+},
+    "type": "fill",
+    "property": "perc_total",
+    "categories": {
+        "breaks": "no",
+        "color": [
+            "#f03b20",
+			"#feb24c",
+            "#2ca25f"
+        ],
+        "limit": [
+			39,
+			49,
+			10000
+		],
+		"label": [
+			"below 40%",
+			"40 - 49%",
+			"above 50%"
+		]
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "date",
+            "showAllZeroPeriods": true
+        },
+        "filter": [
+            "province"
+        ],
+        "accepted-filter-values": [
+            "multi"
+        ],
+        "filter-label": [
+            "Province"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><small><b>Province:</b> {{province}}<br><b>Pillar :</b> {{pillar}}<br><b>Sector :</b> {{sector}}<br><b>Target:</b> {{target}}<br><b>Percentage Achieved:</b> {{perc_total}}%<br><b>Total Achieved:</b> {{reached}}<br><b>Females Achieved:</b> {{female}}<br><b>Males Achieved:</b> {{male}}<br><b>Disabled Achieved:</b> {{disabled}}</small></p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
