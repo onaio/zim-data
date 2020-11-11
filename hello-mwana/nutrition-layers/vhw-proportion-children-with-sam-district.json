@@ -16,7 +16,7 @@
     "property": "prop_sam",
     "categories": {
         "breaks": "yes",
-        "color": ["#FF0000","#f8bf84","#008000"],
+        "color": ["#008000","#f8bf84","#FF0000"],
         "clusters": 3
     },
     "aggregate": {
