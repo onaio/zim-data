@@ -20,7 +20,7 @@
           "breaks": "no", 
           "limit": [7,20,5000],
           "label":["0-7","8-20","20 or more"],
-          "color": ["#FF0000","#f8bf84","#008000"]                                                                            
+          "color": ["#008000","#f8bf84","#FF0000"]                                                                              
           
         },
          "geo-columns": ["longitude","latitude"],
