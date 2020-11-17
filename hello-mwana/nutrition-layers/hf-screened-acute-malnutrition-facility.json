@@ -31,7 +31,7 @@
             "field": "period"
         },
         "filter": [
-            "province","district","health_facility"
+            "province","district","Facility"
         ],
         "accepted-filter-values": [
             "all","all","all"
@@ -59,7 +59,7 @@
 
     },
     "popup": {
-        "header": "health_facility",
+        "header": "Facility",
         "body": " <p style=text-align:left;><b>Total children screened:</b> {{children_acute_mal}}</p>"
     },
     "visible": false,
