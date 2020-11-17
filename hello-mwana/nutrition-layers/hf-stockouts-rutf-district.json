@@ -15,10 +15,9 @@
     "type": "fill",
     "property": "no_stock_out",
     "categories": {
-        "breaks": "no",
-        "limit": [0,5000000],
-          "label":["=0",">0"],
-          "color": ["#FF0000","#0652F0"]  
+        "breaks": "yes",
+        "color": ["#FF0000","#f8bf84","#008000"],
+        "clusters": 3
     },
     "aggregate": {
         "no-sort": true,
