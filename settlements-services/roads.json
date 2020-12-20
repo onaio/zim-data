@@ -6,6 +6,7 @@
       "url": "mapbox://mapbox.mapbox-streets-v7"
     },
     "type": "line",
+    "visible": false,
     "paint": {
       "line-width": 1,
       "line-color": "#FF851B",
