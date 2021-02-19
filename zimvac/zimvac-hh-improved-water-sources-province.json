@@ -1,0 +1,47 @@
+{
+    "label": "Percentage of Households accessing water from improved sources",
+    "source": {
+        "type": "vector",
+        "data": {
+            "type": "superset",
+            "slice-id": 18239
+        },
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
+        "join": [
+            "ADM1_EN",
+            "province"
+        ]
+    },
+    "type": "fill",
+    "property": "rate",
+    "categories": {
+        "breaks": "yes",
+        "color": "Greens",
+        "clusters": 5
+    },
+    "aggregate": {
+        "timeseries": {
+            "type": "cumulative",
+            "field": "year"
+        },
+        "filter": [
+            "province"
+        ],
+        "accepted-filter-values": [
+            "all"
+        ],
+        "filter-label": [
+            "Province"
+        ],
+        "filter-type": [
+            "vBool"
+        ]
+    },
+    "popup": {
+        "header": "province",
+        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br></p>"
+    },
+    "visible": false,
+    "credit": "Cluster"
+}
