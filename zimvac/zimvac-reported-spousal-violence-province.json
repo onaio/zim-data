@@ -1,5 +1,5 @@
 {
-    "label": "Percentage of Households accessing water from improved sources",
+    "label": "Percentage of respondents who reported spousal violence",
     "source": {
         "type": "vector",
         "data": {
@@ -18,7 +18,7 @@
     "categories": {
         "breaks": "no",
         "limit":[49,100],
-        "color": ["#d7301f","#2ca25f"],
+        "color": ["#f03b20","#2ca25f"],
         "label": ["0-49","50+"]
     },
     "aggregate": {
@@ -41,7 +41,7 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br></p>"
+        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br><b>Survey Year:</b> {{year}}<br></p>"
     },
     "visible": false,
     "credit": "Cluster"
