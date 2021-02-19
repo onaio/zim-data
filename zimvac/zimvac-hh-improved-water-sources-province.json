@@ -17,7 +17,7 @@
     "property": "rate",
     "categories": {
         "breaks": "yes",
-        "color": "RdGn",
+        "color": "Greens",
         "clusters": 5
     },
     "aggregate": {
@@ -43,5 +43,5 @@
         "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br></p>"
     },
     "visible": false,
-    "credit": "ZIMVAC"
+    "credit": "Period"
 }
