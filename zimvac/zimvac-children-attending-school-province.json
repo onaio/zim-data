@@ -24,7 +24,7 @@
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
-            "field": "year"
+            "field": "period"
         },
         "filter": [
             "province"
