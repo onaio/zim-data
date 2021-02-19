@@ -13,7 +13,7 @@
             "province"
         ]
     },
-     "type": "fill",
+    "type": "fill",
     "property": "rate",
     "categories": {
         "breaks": "yes",
@@ -43,5 +43,5 @@
         "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br></p>"
     },
     "visible": false,
-    "credit": "Period"
+    "credit": "Cluster"
 }
