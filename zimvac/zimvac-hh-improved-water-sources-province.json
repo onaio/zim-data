@@ -43,5 +43,5 @@
         "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br></p>"
     },
     "visible": false,
-    "credit": "Cluster"
+    "credit": "Province"
 }
