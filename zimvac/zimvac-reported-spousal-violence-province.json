@@ -19,7 +19,7 @@
         "breaks": "no",
         "limit":[49,100],
         "color": ["#f03b20","#2ca25f"],
-        "label": ["0-49","50+"]
+        "label": ["0-49%","Above 50%"]
     },
     "aggregate": {
         "timeseries": {
@@ -44,5 +44,5 @@
         "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br><b>Survey Year:</b> {{year}}<br></p>"
     },
     "visible": false,
-    "credit": "Cluster"
+    "credit": "ZIMVAC"
 }
