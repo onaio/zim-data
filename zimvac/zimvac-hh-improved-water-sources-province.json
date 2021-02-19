@@ -16,9 +16,10 @@
     "type": "fill",
     "property": "rate",
     "categories": {
-        "breaks": "yes",
-        "color": "Greens",
-        "clusters": 5
+        "breaks": "no",
+        "limit":[49,100],
+        "color": ["#FF0000","#2ca25f"],
+        "label": ["0-49","50+"]
     },
     "aggregate": {
         "timeseries": {
