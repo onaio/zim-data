@@ -24,7 +24,7 @@
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
-            "field": "period"
+            "field": "year"
         },
         "filter": [
             "province"
@@ -41,8 +41,8 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br><b>Survey Year:</b> {{Period}}<br></p>"
+        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br><b>Survey Year:</b> {{year}}<br></p>"
     },
     "visible": false,
-    "credit": "Cluster"
+    "credit": "ZIMVAC"
 }
