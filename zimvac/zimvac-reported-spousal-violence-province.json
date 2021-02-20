@@ -1,18 +1,11 @@
-{
-    "label": "Percentage of respondents who reported spousal violence",
+   {
+    "label": "Percentage of respondents who reported spousal violence ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
             "slice-id": 18244
         },
-        "layer": "zwe_adm1_province",
-        "url": "mapbox://ona.9h0dpqlh",
-        "join": [
-            "ADM1_EN",
-            "province"
-        ]
-    },
         "layer": "zwe_adm1_province",
         "url": "mapbox://ona.9h0dpqlh",
         "join": [
