@@ -9,7 +9,7 @@
          "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
         "join": [
-            "ADM2_EN",
+            "ADM2_CODE",
             "district_code"
         ]
     },
