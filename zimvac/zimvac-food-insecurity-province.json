@@ -6,11 +6,11 @@
             "type": "superset",
             "slice-id": 18237
         },
-         "layer": "zwe_adm2_district",
-        "url": "mapbox://ona.62o31uy4",
+        "layer": "zwe_adm1_province",
+        "url": "mapbox://ona.9h0dpqlh",
         "join": [
-            "ADM2_CODE",
-            "district_code"
+           "ADM1_PCODE",
+           "province_code"
         ]
     },
     "type": "fill",
