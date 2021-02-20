@@ -1,4 +1,4 @@
-{
+   {
     "label": "Percentage  of food insecurity levels ",
     "source": {
         "type": "vector",
@@ -32,7 +32,6 @@
         "accepted-filter-values": [
             "all"
         ],
-        
         "filter-label": [
             "Province"
         ],
