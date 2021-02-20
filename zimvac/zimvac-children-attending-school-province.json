@@ -44,5 +44,5 @@
         "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br><b>Survey Year:</b> {{year}}<br></p>"
     },
     "visible": false,
-    "credit": "ZIMVAC"
+    "credit": "Cluster"
 }
