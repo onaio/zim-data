@@ -17,7 +17,7 @@
     "property": "rate",
     "categories": {
         "breaks": "no",
-        "limit":[49,100],
+        "limit":[49,600],
         "color": ["#f03b20","#2ca25f"],
         "label": ["0-49%","Above 50%"]
     },
