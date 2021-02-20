@@ -32,6 +32,7 @@
         "accepted-filter-values": [
             "all"
         ],
+        
         "filter-label": [
             "Province"
         ],
