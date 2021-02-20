@@ -21,11 +21,11 @@
         "color": ["#f03b20","#2ca25f"],
         "label": ["0-49%","Above 50%"]
     },
-     "aggregate": {
+      "aggregate": {
         "timeseries": {
-          "field": "year"
-        }
-      },
+            "type": "cumulative",
+            "field": "year"
+        },
         "filter": [
             "province"
         ],
