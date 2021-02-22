@@ -17,9 +17,9 @@
     "property": "rate",
     "categories": {
         "breaks": "no",
-        "limit":[49,100],
-        "color": ["#f03b20","#2ca25f"],
-        "label": ["0-49%","Above 50%"]
+        "limit":[1.9,3.0],
+        "color": ["#2ca25f","#f03b20"],
+        "label": ["0-1.9","2+"]
     },
     "aggregate": {
         "timeseries": {
