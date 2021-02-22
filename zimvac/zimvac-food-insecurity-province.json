@@ -18,7 +18,7 @@
     "categories": {
         "breaks": "no",
         "limit":[49,100],
-        "color": ["#f03b20","#feb24c"],
+        "color": ["#feb24c","#f03b20"],
         "label": ["0-49%","Above 50%"]
     },
     "aggregate": {
