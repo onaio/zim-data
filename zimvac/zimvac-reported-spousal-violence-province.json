@@ -41,7 +41,7 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br><b>Survey Year:</b> {{year}}<br></p>"
+        "body": " <p style=text-align:left;><b>Percentage Reached:</b> {{rate}}<br></p>"
     },
     "visible": false,
     "credit": "Cluster"
