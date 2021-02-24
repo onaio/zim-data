@@ -4,7 +4,7 @@
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 17476
+            "slice-id": 18264
         },
         "layer": "zwe_adm2_district",
         "url": "mapbox://ona.62o31uy4",
