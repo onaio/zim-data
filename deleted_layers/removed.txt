@@ -1,0 +1,19 @@
+ "Humanitarian Action for Children": [
+ "Child Protection": [
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-hac/zco-hac-ftr.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-hac/zco-hac-violence.json"
+          ]
+    ]
+     "COVID-19 Response": [
+      {
+        "Child Protection": [
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-personel-psea.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-partners-psea.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-child-friendly-spaces.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-children-no-care.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-frontline-psycho.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-parents-mental-care.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-survivors-violence.json",
+          "https://raw.githubusercontent.com/onaio/zim-data/master/zco-covid/zco-covid-sexualabuse-reporting.json"
+        ]
+      },
