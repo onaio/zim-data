@@ -54,7 +54,7 @@
     },
     "popup": {
         "header": "province",
-        "body": " <p style=text-align:left;><small><b>Province:</b> {{Province}}<br><b>Pillar :</b> {{Pillar}}<br><b>Sector :</b> {{Sector}}<br><b>Target:</b> {{target}}<br><b>Percentage Achieved:</b> {{perc_total}}%<br><b>Total Achieved:</b> {{reached}}<br><b>Females Achieved:</b> {{female}}<br><b>Males Achieved:</b> {{male}}<br><b>Disabled Achieved:</b> {{disabled}}</small></p>"
+        "body": " <p style=text-align:left;><small><b>Province:</b> {{province}}<br><b>Pillar :</b> {{pillar}}<br><b>Sector :</b> {{sector}}<br><b>Target:</b> {{target}}<br><b>Percentage Achieved:</b> {{perc_total}}%<br><b>Total Achieved:</b> {{reached}}<br><b>Females Achieved:</b> {{female}}<br><b>Males Achieved:</b> {{male}}<br><b>Disabled Achieved:</b> {{disabled}}</small></p>"
     },
     "visible": false,
     "credit": "Cluster"
