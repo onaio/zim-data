@@ -1,10 +1,10 @@
 {
-    "label": "Number of children and adolescents living with HIV who continue to receive treatment services in UNICEF supported facilities",
+    "label": "Number of children  living with HIV who continue on ART ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 17510
+            "slice-id": 18748
         },
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
