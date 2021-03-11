@@ -1,10 +1,10 @@
 {
-    "label": "Number of frontline workers trained in psychosocial support in quarantine sites",
+    "label": "Number of children provided with community based mental health and psychosocial support.",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 17525
+            "slice-id": 18744
         },
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
