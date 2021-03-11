@@ -1,10 +1,10 @@
 {
-    "label": "Number of people reached on COVID 19 through messsaging on prevention and access to services",
+    "label": "Number of people reached  with COVID 19 messages ",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 17500
+            "slice-id": 18745
         },
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
