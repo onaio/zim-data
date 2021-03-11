@@ -1,10 +1,10 @@
 {
-    "label": "Number of households (affected by COVID-19) receiving humanitarian multi-sector cash grant for basic needs",
+    "label": "Number of households receiving humanitarian multi-sector cash grant for basic needs.",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 17527
+            "slice-id": 18750
         },
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
