@@ -1,10 +1,10 @@
 {
-    "label": "Number of women receiving essential healthcare services, including treatment of common illnesses, antenatal and postnatal care in UNICEF supported facilities",
+    "label": "Number of children receiving essential healthcare services",
     "source": {
         "type": "vector",
         "data": {
             "type": "superset",
-            "slice-id": 17512
+            "slice-id": 18747
         },
     "layer": "zwe_adm1_province",
     "url": "mapbox://ona.9h0dpqlh",
