@@ -36,7 +36,7 @@
     "aggregate": {
         "timeseries": {
             "type": "cumulative",
-            "field": "date",
+            "field": "period",
             "showAllZeroPeriods": true
         },
         "filter": [
