@@ -52,7 +52,7 @@
     
     "popup": {
         "header": "district",
-        "body": " <p style=text-align:left;><b>Proportion of children with SAM:</b> {{prop_children_sam}}</p>"
+        "body": " <p style=text-align:left;><b>Proportion of children with SAM:</b> {{prop_sam}}</p>"
     },
     "visible": false,
     "credit": " "
